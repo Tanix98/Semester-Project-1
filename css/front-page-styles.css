@@ -21,26 +21,15 @@ body {
 
 /* main */
 
-.page-title {
-    text-align: center;
-    padding-bottom: 3vw;
-}
-
 .welcome-text {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 3vw;
     background-color: rgba(255, 255, 255, 0.5);
-    padding-top: 2vw;
-    padding-bottom: 2vw;
+    padding: 2vw;
     width: 75vw;
     margin: auto;
-}
-
-.main-text {
-    padding-left: 2vw;
-    padding-right: 2vw;
 }
 
 .categories {
@@ -72,7 +61,7 @@ body {
 }
 
 .explore-image img, .exhibition-spaces-image img, .special-events-and-exhibitions-image img, .get-involved-image img, .visit-image img {
-    filter: brightness(50%);
+    filter: brightness(55%);
     width: 100%;
 }
 
@@ -90,9 +79,6 @@ body {
 }
 
 @media only screen and (max-width: 400px) {
-    .page-title {
-        padding-bottom: 6vw;
-    }
     .welcome-text {
         width: 92vw;
         padding-top: 5vw;

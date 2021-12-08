@@ -1,0 +1,60 @@
+:root {
+    --white: #FFF;
+    --black: #0000;
+    --grey: #4a4a4a; 
+    --orange: #e67a23;
+    --blue: #158c87; 
+    --dark-green: #12960b; 
+    --red: #e42328; 
+    --light-green: #42c329; 
+}
+
+body {
+    background-image: url(../resources/images/adobestock_247185860.jpg);
+    background-size: cover;
+    background-color: var(--white);
+    background-position-y: 30%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.page-text {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    margin: auto;
+    gap: 3vw;
+}
+
+.support-title, .volunteer-title, .internships-title {
+    text-align: center;
+    padding-bottom: 1.5vw;
+}
+
+.support, .volunteer, .internships {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2vw;
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        background-position-x: 34%;
+    }
+    
+    .page-text {
+        width: 92vw;
+        gap: 4vw;
+    }
+
+    .support-title, .volunteer-title, .internships-title {
+        padding-bottom: 3vw;
+    }
+
+    .support, .volunteer, .internships {
+        padding: 5vw;
+    }
+
+    .internships {
+        margin-bottom: 3vw;
+    }
+}

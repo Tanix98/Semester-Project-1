@@ -29,15 +29,16 @@ h1 {
     font-size: 5vw;
 }
 
-h2 { 
+#museum-slogan { 
     font-size: 2.5vw;
 }
 
-h3 {
+h2 {
+    font-family: "Spartan-Medium";
     font-size: 2vw;
 }
 
-h2, h3 {
+#museum-slogan {
     font-family: "Ubuntu-Medium";
 }
 
@@ -69,17 +70,23 @@ body {
 
 /* main */
 
-main {
-    padding-top: 4vw;
-    padding: 2vw;
-    background-color: rgba(255, 255, 255, 0.3);
-    min-height: 100vh;
-}
-
 .header-space {
     padding-bottom: 3vw;
     color: transparent;
 }
+
+.page-title {
+    text-align: center;
+    padding-bottom: 3vw;
+}
+
+main {
+    padding: 2vw;
+    background-color: rgba(255, 255, 255, 0.4);
+    min-height: 100vh;
+}
+
+
 
 /* header */
 
@@ -406,6 +413,9 @@ footer {
 }
 
 @media only screen and (max-width: 400px) {
+    .page-title {
+        padding-bottom: 6vw;
+    }
     .header-space {
         padding-bottom: 2.5rem;
     }
@@ -428,10 +438,10 @@ footer {
     h1 {
         font-size: 10vw;
     }
-    h2 { 
+    #museum-slogan { 
         font-size: 7vw;
     }
-    h3 {
+    h2 {
         font-size: 6vw;
     }
     p {
