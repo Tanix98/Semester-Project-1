@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Game Hub Sell Game</title>
+    <meta name="description" content="Game Hub page for putting games for sale on the Resale Market">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f08036">
+    <meta charset="utf-8">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/sell-game-page-styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <nav>
+        <img src="../resources/icons-logos/hamburger-menu-icon.png" id="hamburger-menu-icon" class="hamburger-menu-icon">
+        <div class="game-hub-logo-home">
+            <a href="../index.html">
+            <img src="../resources/icons-logos/gamehub-logo-bigger-new-new-color.png" alt="Logo"></a>
+        </div>
+        <ul class="wish-cart-profile-buttons">
+            <li class="wish-list-button">
+                <a href="wish-list.html">
+                <img src="../resources/icons-logos/heart-white-filled.png" alt="Wishlist"></a>
+                </li>
+            <li class="shopping-cart-button">
+                <a href="shopping-cart.html">
+                <img src="../resources/icons-logos/shopping-cart-white.png" alt="Shopping cart"></a>
+                </li>
+            <li class="profile-button-loggedin">
+                <a href="account.html">
+                <img src="../resources/images/Profile_Pictures/nur-alamin-ua-ETCQY7rw-unsplash_cropped.jpg" alt="My profile"></a>
+                </li>   
+        </ul>
+        <div class="wrapper">
+            <div class="sidebar-search-box">
+                <div class="search-box-icon-1">
+                    <img src="../resources/assets/search-icon.png">    
+                </div>
+                <input type="search">
+            </div>
+        </div>
+        <ul class="game-store-menu">
+            <ul class="game-store-menu-title">
+            <li><a href="game-store.html">GAME STORE</a></li></ul>
+            <li><a href="game-store.html">New releases</a></li>
+            <li><a href="game-store.html">Classics</a></li>
+            <li><a href="game-store.html">Trending</a></li>
+        </ul>
+        <ul class="resale-market-menu">            
+            <ul class="resale-market-menu-title">
+            <li><a href="resale-market.html">RESALE MARKET</a></li></ul>
+            <li><a href="resale-market.html">Current gen</a></li>
+            <li><a href="resale-market.html">Previous gen</a></li>
+            <li><a href="resale-market.html">PC</a></li>
+            <li><a href="resale-market.html">Retro</a></li>
+        </ul>
+        <ul class="sell-game-button">
+            <li><a href="sell-game.html">Sell game</a></li>
+        </ul>
+        <div class="customer-service-button">
+            <a href="contact.html"><img src="../resources/icons-logos/customer-service-chat-icon.png" alt="Customer service"></a>
+        </div>
+        <div class="gamehub-copyright"><h1>© 2021 Game Hub Corporation</h1></div>
+    </nav>
+    <main>
+        <div id="gamehub-logo-mobile"><a href="../index.html"><img src="../resources/icons-logos/gamehub-logo-bigger-new-new-color.png"></a></div>
+        <div class="sell-game">
+            <div class="sell-game-content">
+                <div class="sell-game-text">
+                    <h2>SELL GAME</h2>
+                </div>   
+                <div>
+                    <form class="sell-game-forms" method="POST">
+                        <div>
+                            <label for="upload-game-image">UPLOAD IMAGE*</label>
+                            <input type="file" name="game-image" id="upload-game-image" required></input>
+                        </div>
+                        <div>
+                            <label for="title">TITLE*</label>
+                            <input type="text" name="title" id="title" maxlength="60" required></input>
+                        </div>
+                        <div>
+                            <label for="price">PRICE*</label>
+                            <input type="number" name="price" id="price" maxlength="5" required></input>
+                        </div>
+                        <div>
+                            <label for="description">DESCRIPTION*</label>
+                            <textarea type="text" name="description" id="description" maxlength="600" style="overflow:hidden;" required></textarea>
+                        </div>
+                        <div>
+                            <label for="tags">TAGS*</label>
+                            <input type="text" name="tags" id="tags" maxlength="60" required></input>
+                        </div>
+                        <button type="submit" name="submit-button" action="resale-market-game.html" id="submit-button">PUBLISH TO MARKET</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
