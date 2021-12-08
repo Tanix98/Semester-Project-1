@@ -363,6 +363,7 @@ footer {
         min-height: 1.9rem;
     }
 }
+
 @media only screen and (max-width: 600px) {
     /*.header-museum-logo img {
         padding-top: 0.1rem;
@@ -403,10 +404,23 @@ footer {
         display: none;
     }
 }
+
 @media only screen and (max-width: 400px) {
     .header-space {
-        padding-bottom: 1.4rem;
+        padding-bottom: 2.5rem;
     }
+    header {
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+    .header-museum-logo img {
+        width: 13rem;
+    }
+    label[for=header-hamburger-menu-button] img {
+        width: 2rem;
+        margin-left: 1rem;
+    }
+
     footer {
         display: none;
     }
@@ -422,5 +436,11 @@ footer {
     }
     p {
         font-size: 5vw;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    label[for=header-hamburger-menu-button] img {
+        margin-right: 3rem;
     }
 }
