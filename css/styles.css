@@ -418,7 +418,7 @@ footer {
     }
     label[for=header-hamburger-menu-button] img {
         width: 2rem;
-        margin-left: 1rem;
+        margin-left: 0.7rem;
     }
 
     footer {
