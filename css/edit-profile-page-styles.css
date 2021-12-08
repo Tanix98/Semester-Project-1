@@ -1,0 +1,195 @@
+:root {
+    --light-blue: #396dff;
+    --light-orange: #f08036;
+    --dark-blue: #2c55c4; 
+    --dark-orange: #a75a27;
+    --white: #FFF; 
+}
+
+.edit-profile {
+    font-size: 1.2vw;
+    color: var(--white);
+    /*padding: 10px;*/
+    background-image: url(../resources/images/Backgrounds/side-menu-background.png);
+    background-attachment: fixed;
+    height: 100%;
+    max-width: 50%;
+    margin: auto;
+}
+
+/*.edit-profile-content {
+    display: grid;
+    gap: 1.4rem;
+}*/
+
+.edit-profile-text {
+    font-size: 2.6vw;
+    text-align: center;
+    padding-top: 1vw;
+    color: var(--light-blue)
+}
+
+.edit-profile-forms {
+    display: grid;
+    padding: 4vw 7vw;
+    gap: 2vw;
+}
+
+/* Forms */
+
+#upload-profile-picture {
+    background-image: url(../resources/images/Backgrounds/side-menu-background.png);
+    font-family: inherit;
+    border: 0.22vw solid var(--light-blue);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1vw;
+    padding: 8.5vw;
+    margin-top: 0.2vw;
+    width: 100%;
+}
+
+#nickname {
+    display: flex;
+    background-image: url(../resources/images/Backgrounds/side-menu-background.png);
+    background-color: transparent;
+    font-family: inherit;
+    border: 0.22vw solid var(--light-blue);
+    color: var(--white);
+    font-size: 1vw;
+    padding: 0.4vw;
+    margin-top: 0.2vw;
+    width: 100%;
+}
+
+/* Hide_price_arrows Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Hide_price_arrows Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#profile-description {
+    background-image: url(../resources/images/Backgrounds/side-menu-background.png);
+    background-color: transparent;
+    font-family: inherit;
+    border: 0.22vw solid var(--light-blue);
+    color: var(--white);
+    font-size: 1vw;
+    padding: 0.4vw;
+    margin-top: 0.2vw;
+    width: 100%;
+    padding-bottom: 11vw;
+}
+
+#location {
+    background-image: url(../resources/images/Backgrounds/side-menu-background.png);
+    background-color: transparent;
+    font-family: inherit;
+    border: 0.22vw solid var(--light-blue);
+    color: var(--white);
+    font-size: 1vw;
+    padding: 0.4vw;
+    margin-top: 0.2vw;
+    width: 100%;
+}
+
+#email-address {
+    display: flex;
+    background-image: url(../resources/images/Backgrounds/side-menu-background.png);
+    background-color: transparent;
+    font-family: inherit;
+    border: 0.22vw solid var(--light-blue);
+    color: var(--white);
+    font-size: 1vw;
+    padding: 0.4vw;
+    margin-top: 0.2vw;
+    width: 100%;
+}
+
+.edit-profile-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#submit-button1 {
+    color: var(--white);
+    background-color: var(--light-orange);
+    font-family: inherit;
+    font-size: 1vw;
+    cursor: pointer;
+    border: 0;
+    padding: 0.5vw 1.1vw;
+    /*max-width: 14.78rem;*/
+}
+
+#submit-button2 {
+    color: var(--white);
+    background-color: var(--light-orange);
+    font-family: inherit;
+    font-size: 1.2vw;
+    cursor: pointer;
+    border: 0;
+    padding: 0.5vw 3vw;
+    /*max-width: 14.78rem;*/
+}
+
+@media only screen and (max-width: 400px) {
+    #gamehub-logo-mobile {
+        margin-left: 23vw;
+    }
+    .edit-profile {
+        font-size: 6vw;
+        background-image: none;
+        max-width: 100%;
+        margin-right: 8vw;
+    }
+    .edit-profile-text {
+        font-size: 10vw;
+        padding-top: 0;
+        margin-bottom: 10vw;
+    }
+    .edit-profile-forms {
+        gap: 4vw;
+    }
+    #upload-profile-picture {
+        border: 1vw solid var(--light-blue);
+        font-size: 4vw;
+        padding: 20vw;
+        margin-top: 2vw;
+    }
+    #nickname {
+        border: 1vw solid var(--light-blue);
+        font-size: 6vw;
+        padding: 2vw;
+        margin-top: 2vw;
+    }
+    #profile-description {
+        border: 1vw solid var(--light-blue);
+        font-size: 6vw;
+        margin-top: 2vw;
+        padding-bottom: 20vw;
+    }
+    #location {
+        border: 1vw solid var(--light-blue);
+        font-size: 6vw;
+        padding: 2vw;
+        margin-top: 2vw;
+    }
+    #email-address {
+        border: 1vw solid var(--light-blue);
+        font-size: 6vw;
+        padding: 2vw;
+        margin-top: 2vw;
+    }
+    #submit-button1, #submit-button2 {
+        margin-top: 4vw;
+        font-size: 5vw;
+        padding: 2vw 4vw;
+        width: 30vw;
+    }
+}

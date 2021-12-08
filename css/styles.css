@@ -1,0 +1,269 @@
+@font-face {
+    font-family: "Roboto-Regular";
+        src: url("/resources/fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: "Roboto-Medium";
+        src: url("/resources/fonts/Roboto/Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: "Roboto-Bold";
+        src: url("/resources/fonts/Roboto/Roboto-Bold.ttf");
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+p, h1 {
+    font-family: "Roboto-Regular", Arial, Helvetica;
+}
+
+h2, h3 {
+    font-family: "Tourney", Tahoma, Verdana;
+}
+
+:root {
+    --light-blue: #396dff;
+    --light-orange: #f08036;
+    --dark-blue: #2c55c4; 
+    --dark-orange: #a75a27;
+    --white: #FFF; 
+}
+
+/* NAV BEGINNING */
+
+nav {
+    display: grid;
+    grid-area: nav;
+    /*grid-template-rows: auto;*/
+    justify-content: center;
+    /*gap: 1.2vw;*/
+    width: 12vw;
+    min-height: 100vh;
+    position: fixed;
+    /* min-width: 10rem; */
+    background-image: url(../resources/images/Backgrounds/side-menu-background.png);
+    background-attachment: fixed;
+    align-items: center;
+    z-index: 3;
+}
+
+nav img {
+    /*width: 9vw;
+    margin-bottom: 2vw /*35px;
+    margin-top: 0.3vw /*6px;*/
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.2vw;
+    font-size: 1.1vw;
+    font-weight: bold;
+    color: var(--light-blue);
+    letter-spacing: 0.05vw;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+.hamburger-menu-icon {
+    visibility: hidden;
+    display: contents;
+}
+
+.game-hub-logo-home {
+    margin: auto;
+}
+
+.game-hub-logo-home a{
+    /*padding: 20px;*/
+}
+
+.game-hub-logo-home img {
+    width: 9vw;
+    /*margin: 0;*/
+}
+
+.wish-cart-profile-buttons {
+    /*margin: 0;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.wish-cart-profile-buttons img {
+    margin: 0.5vw;
+    max-width: 2vw;
+    max-height: 2vw;
+}
+
+.profile-button-loggedout img {
+    border: 0.2vw solid var(--light-orange);
+}
+
+.profile-button-loggedin img {
+    border: 0.2vw solid var(--light-blue);
+}
+
+.sidebar-search-box {
+    position: relative;
+}
+
+.wrapper {
+    width: 10vw;
+    margin: auto;
+}
+
+.sidebar-search-box input[type=search] {
+    color: var(--white);
+    padding: 0.5vw;
+    padding-left: 1.9vw;
+    border: 0.2vw solid var(--white);
+    background: rgba(0,0,0,0.3); 
+    font-size: 0.95vw;
+    outline: none;
+    width: 10vw;
+    height: 2.1vw;
+}
+
+.search-box-icon-1 {
+    position: absolute;
+    color: var(--white);
+    padding-left: 0.5vw;
+    padding-top: 0.45vw;
+}
+
+.search-box-icon-1 img {
+    width: 1.2vw;
+}
+
+ul.game-store-menu-title {
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 0.05vw;
+    font-family: "Tourney", Tahoma, Verdana;
+    font-size: 1.2vw;
+    border-bottom: 0.22vw solid var(--light-blue);;
+    /*margin-bottom: 10px;*/
+    /*margin-top: 8px;*/
+}
+
+ul.game-store-menu-title a:hover {
+    color: var(--light-blue) !important;
+}
+
+ul.game-store-menu a:hover {
+    color: var(--dark-blue);
+}
+
+ul.resale-market-menu-title a, ul.resale-market-menu a {
+    color: var(--light-orange);
+}
+
+ul.resale-market-menu-title {
+    color: var(--light-orange);
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 0.05vw;
+    font-family: "Tourney", Tahoma, Verdana;
+    font-size: 1.2vw;
+    border-bottom: 0.22vw solid var(--light-orange);
+    /*margin-bottom: 10px;*/
+    /*margin-top: 0.5rem;*/
+}
+
+ul.resale-market-menu-title a:hover {
+    color: var(--light-orange) !important;
+}
+
+ul.resale-market-menu a:hover {
+    color: var(--dark-orange);
+}
+
+.sell-game-button a {
+    background-color: var(--light-orange);
+    color: var(--white);
+    padding: 0.6vw 1vw;
+    text-decoration: none;
+    font-size: 0.9vw;
+    text-transform: uppercase;
+    /*margin-top: 2rem;*/
+    /*margin-bottom: 4rem;*/
+}
+
+.customer-service-button {
+    text-align: center;
+}
+
+.customer-service-button img {
+    /*margin: 15px;*/
+    height: 2vw;
+    width: 2vw;
+}
+
+.gamehub-copyright {
+    color: var(--white);
+    font-size: 0.4vw;
+    text-align: center;
+    /*margin-bottom: 0.6rem;*/
+}
+
+/* NAV END */
+
+/* MAIN BEGINNING */
+
+main {
+    grid-area: main;
+    display: grid;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 12.5vw;
+    grid-template-rows: 100%;
+    grid-template-areas: 'nav main';
+    font-family: "Roboto-Medium", Arial, Helvetica;
+    background-image: url(../resources/images/Backgrounds/gradient-background.jpg);
+    /* background-size: 100vw 100vh; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #1E1E1E;
+}
+
+#gamehub-logo-mobile {
+    display: none;
+}
+
+/* MAIN END */
+
+@media only screen and (max-width: 400px) {
+    nav {
+        visibility: hidden; 
+        display: contents;
+    }
+    #hamburger-menu-icon {
+        visibility: visible !important;
+        display: block !important;
+        width: 8vw;
+        margin-left: 4vw;
+        margin-top: 4vw;
+        cursor: pointer;
+    }
+    #gamehub-logo-mobile {
+        display: flex !important;
+        margin: auto;
+    }
+    #gamehub-logo-mobile a {
+        padding: 2vw;
+    }
+    #gamehub-logo-mobile img{
+        width: 32vw;
+        margin-top: -5vw
+    }
+}

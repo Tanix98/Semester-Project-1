@@ -1,0 +1,172 @@
+:root {
+    --light-blue: #396dff;
+    --light-orange: #f08036;
+    --dark-blue: #2c55c4; 
+    --dark-orange: #a75a27;
+    --white: #FFF; 
+}
+
+.account {
+    font-size: 1.2vw;
+    color: var(--white);
+    padding: 1.5vw;
+    height: 100%;
+    background-image: url(../resources/images/Backgrounds/side-menu-background.png);
+    background-attachment: fixed;
+    max-width: 50%;
+    gap: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+grid-item {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.edit-profile-button a {
+    background-color: var(--light-blue);
+    color: var(--white);
+    padding: 0.4vw 0.7vw;
+    text-decoration: none;
+    font-size: 1.1vw;
+    /*float: left;*/
+    position: absolute; bottom: 0; left: 0;
+    margin-left: 1.4vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.account-box1 {
+    position: relative;
+}
+
+.location-text {
+    display: none;
+    /*font-family: "Roboto-Bold";
+    text-align: center;
+    float: right;
+    width: 6rem;
+    margin-top: 3vw;*/
+}
+
+#btnLanguage {
+    font-size: 2.8vw;
+    color: var(--light-orange);
+    /*float: right;*/
+    position: absolute; bottom: 0; right: 0;
+    margin-right: 5vw;
+}
+
+#star-reviews-score {
+    font-family: "Roboto-Bold";
+    font-size: 1.2vw;
+    color: var(--light-orange);
+    /*float: right;*/
+    position: absolute; bottom: 0; right: 0;
+    margin-right: 3vw;
+}
+
+.account-profile-picture-loggedin img {
+    width: 14.5vw;
+    border: 0.3vw solid var(--light-blue);
+    margin-top: 2vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.account-desc {
+    max-width: 35vw;
+}
+
+.account-buttons-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1.8vw;
+    row-gap: 1.2vw;
+    margin: 2vw;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 5vw;
+    margin-bottom: 6vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.account-buttons-bottom a {
+    background-color: var(--light-blue);
+    color: var(--white);
+    padding: 0.6vw 1vw;
+    text-decoration: none;
+    font-size: 1.2vw;
+    display: block;
+}
+
+@media only screen and (max-width: 400px) {
+    #gamehub-logo-mobile {
+        margin-left: 56vw;
+    }
+    .account {
+        font-size: 6vw;
+        padding: 0;
+        height: 100%;
+        width: 150vw;
+        background-image: none;
+        gap: 3vw;
+        margin-left: 34vw;
+        margin-top: -12vw;
+    }
+    .edit-profile-button a {
+        padding: 1.5vw 3vw;
+        font-size: 4vw;
+        position: absolute; bottom: 0; left: 0;
+        margin-left: -12.2vw;
+    }
+    #btnLanguage {
+        font-size: 9vw;
+        color: var(--light-orange);
+        /*float: right;*/
+        position: absolute; bottom: 0; right: 0;
+        margin-right: 2vw;
+    }
+    #star-reviews-score {
+        font-family: "Roboto-Bold";
+        font-size: 5vw;
+        color: var(--light-orange);
+        /*float: right;*/
+        position: absolute; bottom: 0; right: 0;
+        margin-right: -6vw;
+    }
+    .account-profile-picture-loggedin img {
+        width: 45vw;
+        border: 1vw solid var(--light-blue);
+        margin-top: 2vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .account-desc {
+        font-size: 5vw;
+        max-width: 80vw;
+        text-align: left;
+    }
+    .account-buttons-bottom {
+        column-gap: 3vw;
+        row-gap: 4vw;
+        margin-left: 2vw;
+        white-space: nowrap;
+        overflow: visible;
+        text-overflow: ellipsis;
+    }
+    .account-buttons-bottom a {
+        padding: 2vw 2vw;
+        font-size: 4vw;
+    }
+}

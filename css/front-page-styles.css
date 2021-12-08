@@ -1,0 +1,230 @@
+:root {
+    --light-blue: #396dff;
+    --light-orange: #f08036;
+    --dark-blue: #2c55c4; 
+    --dark-orange: #a75a27;
+    --white: #FFF; 
+}
+
+/* Game Store */
+
+.game-store-title {
+    list-style: none;
+    text-align: center;
+}
+
+.game-store-title a {
+    padding: 0.2vw 0.8vw;
+    color: var(--light-blue);
+    font-family: "Tourney", Tahoma, Verdana;
+    font-size: 2.6vw;
+    text-decoration: none;
+    border-bottom: 0.3vw solid var(--light-blue);
+}
+
+.game-store {
+    display: grid;
+    gap: 1vw;
+    width: 87vw;
+    margin-top: 1vw;
+}
+
+.game-store-game-banners {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+}
+
+.left-arrow-mobile img {
+    display: none;
+}
+
+.right-arrow-mobile img {
+    display: none;
+}
+
+.image-left-overlay-arrow {
+    position: relative;
+}
+.image-left-overlay-arrow:nth-child(2) {
+    position: absolute;
+}
+.left-arrow-overlay img {
+    position: absolute;
+    border: 0 !important;
+    z-index: 2;
+    left: 0;
+    pointer-events: none
+}
+
+.image-right-overlay-arrow {
+    position: relative;
+}
+.image-right-overlay-arrow:nth-child(2) {
+    position: absolute;
+}
+.right-arrow-overlay img {
+    position: absolute;
+    border: 0 !important;
+    z-index: 2;
+    right: 0;
+    pointer-events: none
+}
+
+.game-store img {
+    max-height: 15vw;
+    height: 15vw;
+    margin: 0.8vw;
+    border: 0.22vw solid var(--light-blue);
+}
+
+/* Resale Market */
+
+.resale-market-title {
+    list-style: none;
+    text-align: center;
+}
+
+.resale-market-title a {
+    padding: 0.2vw 0.8vw;
+    color: var(--light-orange);
+    font-family: "Tourney", Tahoma, Verdana;
+    font-size: 2.6vw;
+    text-decoration: none;
+    border-bottom: 0.3vw solid var(--light-orange);
+}
+
+.resale-market {
+    display: grid;
+    gap: 1vw;
+    /*margin-top: 2.4vw;*/
+    width: 87vw;
+    margin-top: 1vw;
+}
+
+.resale-market-images-arrows {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+}
+
+.resale-market-game-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: auto;
+}
+
+.resale-market-game-images img {
+    height: 15vw;
+}
+
+.resale-market img {
+    margin: 0.8vw;
+    border: 0.22vw solid var(--light-orange);
+}
+
+.left-arrow {
+    display: grid;
+    justify-content: end;
+}
+
+.left-arrow img {
+    border: 0;
+    max-width: 1.5vw;
+    margin-top: 7vw;
+    cursor: pointer;
+}
+
+.right-arrow {
+    display: grid;
+}
+
+.right-arrow img {
+    border: 0;
+    max-width: 1.5vw;
+    margin-top: 7vw;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 400px) {
+    /* game store */
+    .game-store-title {
+        height: 2vw;
+        margin-bottom: -4vw;
+    }
+    .game-store-title a {
+        padding: 0.6vw 3vw;
+        font-size: 8vw;
+        margin-left: 10vw;
+        border-bottom: 0.8vw solid var(--light-blue);
+    }
+    .game-store img {
+        max-height: 40vw;
+        height: 40vw;
+        border: 0.8vw solid var(--light-blue);
+        margin: auto;
+    }
+    .left-arrow-overlay {
+        display: none;
+    }
+    .left-store-image {
+        display: none;
+    }
+    .image-right-overlay-arrow {
+        display: none;
+    }
+    .left-arrow-mobile img {
+        display: block;
+        border: 0;
+        width: 5vw;
+        height: 9vw;
+        margin-top: 18vw;
+        margin-left: 8vw;
+        margin-right: 2vw;
+        cursor: pointer;
+    }
+    .right-arrow-mobile img {
+        display: block;
+        border: 0;
+        width: 5vw;
+        height: 9vw;
+        margin-top: 18vw;
+        margin-left: 2vw;
+        cursor: pointer;
+    }
+    /* resale market */
+    .resale-market-title {
+        margin-top: 4vw;
+        margin-bottom: -4vw;
+        height: 2vw;
+    }
+    .resale-market-title a {
+        padding: 0.6vw 3vw;
+        font-size: 8vw;
+        margin-left: 10vw;
+        border-bottom: 0.8vw solid var(--light-orange);
+    }
+    .resale-market-game-images {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 8.5vw;
+    }
+    .resale-market-game-images {
+        align-items: center;
+    }
+    .resale-market-game-images img {
+        height: auto;
+        width: 40vw;
+    }
+    .resale-market img {
+        border: 0.8vw solid var(--light-orange);
+    }
+    .right-arrow {
+        display: none;
+    }
+    .left-arrow {
+        display: none;
+    }
+    body {
+        grid-template-columns: 0;
+    }
+}
