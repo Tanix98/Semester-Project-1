@@ -1,0 +1,129 @@
+:root {
+    --white: #FFF;
+    --black: #0000;
+    --grey: #4a4a4a; 
+    --orange: #e67a23;
+    --blue: #158c87; 
+    --dark-green: #12960b; 
+    --red: #e42328; 
+    --light-green: #42c329; 
+}
+
+body {
+    background-image: url(../resources/images/scott-webb-102825.jpg);
+    background-size: cover;
+    background-color: var(--white);
+    background-position-y: 25%;
+    background-position-x: 20%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* main */
+
+.page-title {
+    text-align: center;
+    padding-bottom: 3vw;
+}
+
+.welcome-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    width: 75vw;
+    margin: auto;
+}
+
+.main-text {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 3vw;
+    padding-top: 2.5vw;
+}
+
+.explore, .exhibition-spaces, .special-events-and-exhibitions, .get-involved, .visit {
+    position: relative;
+    color: var(--white);
+    margin: auto;
+    width: 27vw;
+}
+.explore-image-text, .exhibition-spaces-image-text, .special-events-and-exhibitions-image-text, .get-involved-image-text, .visit-image-text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 7vw;
+    white-space: wrap;
+    font-family: "Ubuntu-Bold";
+    font-size: 2vw;
+    pointer-events: none;
+}
+
+.special-events-and-exhibitions-image-text {
+    top: 6vw;
+}
+
+.explore-image img, .exhibition-spaces-image img, .special-events-and-exhibitions-image img, .get-involved-image img, .visit-image img {
+    filter: brightness(50%);
+    width: 100%;
+}
+
+.explore-image:hover, .exhibition-spaces-image:hover, .special-events-and-exhibitions-image:hover, .get-involved-image:hover, .visit-image:hover {
+    filter: brightness(110%);
+    width: 100%;
+}
+
+.get-involved {
+    margin-left: 18vw;
+}
+
+.visit {
+    margin-right: 18vw;
+}
+
+@media only screen and (max-width: 400px) {
+    .page-title {
+        padding-bottom: 6vw;
+    }
+    .welcome-text {
+        width: 92vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+    .main-text {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 2vw;
+        padding-top: 5vw;
+        padding-bottom: 2.5vw;
+    }
+    .get-involved {
+        margin-left: 0;
+    }
+    .visit {
+        margin: auto;
+    }
+    .explore, .exhibition-spaces, .special-events-and-exhibitions, .get-involved, .visit {
+        width: 45vw;
+    }
+    .explore-image-text, .exhibition-spaces-image-text, .special-events-and-exhibitions-image-text, .get-involved-image-text, .visit-image-text {
+        width: 100%;
+        top: 11vw;
+        font-size: 3.8vw;
+    }
+    .special-events-and-exhibitions-image-text {
+        top: 9vw;
+    }
+}
