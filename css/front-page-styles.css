@@ -51,7 +51,7 @@ body {
     width: 100%;
     top: 7vw;
     white-space: wrap;
-    font-family: "Ubuntu-Bold";
+    font-family: "Ubuntu-Bold", Arial, Helvetica;
     font-size: 2vw;
     pointer-events: none;
 }

@@ -25,7 +25,7 @@
 }
 
 h1 {
-    font-family: "Ubuntu-Bold";
+    font-family: "Ubuntu-Bold", Arial, Helvetica; 
     font-size: 5vw;
 }
 
@@ -34,16 +34,16 @@ h1 {
 }
 
 h2 {
-    font-family: "Spartan-Medium";
+    font-family: "Spartan-Medium", Tahoma, Verdana;
     font-size: 2vw;
 }
 
 #museum-slogan {
-    font-family: "Ubuntu-Medium";
+    font-family: "Ubuntu-Medium", Arial, Helvetica;
 }
 
 p {
-    font-family: "Spartan-Medium";
+    font-family: "Spartan-Medium", Tahoma, Verdana;
     font-size: 1.5vw;
 }
 
