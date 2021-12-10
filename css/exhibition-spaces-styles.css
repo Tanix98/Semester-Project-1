@@ -52,6 +52,10 @@ h2 {
 }
 
 @media only screen and (max-width: 400px) {
+    body {
+        background-position-x: 35%;
+
+    }
     .exhibition-spaces {
         display: flex;
         flex-direction: column;
