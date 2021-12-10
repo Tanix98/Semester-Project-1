@@ -17,3 +17,63 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.exhibition-spaces {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+}
+
+.exhibition-spaces img {
+    width: 46vw;
+}
+
+h2 {
+    text-align: center;
+}
+
+#cosmology, #ecology, #biology-and-medicine, #evolution, #robotics-and-ai {
+    width: 46vw;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#cosmology-texts, #ecology-texts, #biology-texts, #evolution-texts, #robotics-texts {
+    padding-top: 1.2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vw;
+}
+#cosmology-title, #ecology-title, #biology-title, #evolution-title, #robotics-title {
+    padding-bottom: 0.8vw;
+}
+#robotics-and-ai {
+    margin: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+@media only screen and (max-width: 400px) {
+    .exhibition-spaces {
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+    }
+    .exhibition-spaces img {
+        width: 92vw;
+    }
+    #cosmology, #ecology, #biology-and-medicine, #evolution, #robotics-and-ai {
+        width: 92vw;
+        margin: auto;
+    }
+    #cosmology-texts, #ecology-texts, #biology-texts, #evolution-texts, #robotics-texts {
+        padding-top: 2.4vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-bottom: 4vw;
+    }
+    #cosmology-title, #ecology-title, #biology-title, #evolution-title, #robotics-title {
+        padding-bottom: 1.6vw;
+    }
+    #robotics-and-ai {
+        margin-bottom: 2vw;
+    }
+}
