@@ -96,7 +96,7 @@ h2 {
 @media only screen and (max-width: 400px) {
     body {
         background-position-x: 45%;
-        background-size: 90rem;
+        /*background-size: 90rem;*/
     }
 
     .page-text {
