@@ -18,6 +18,10 @@ body {
     background-attachment: fixed;
 }
 
+.page-text-mobile {
+    display: none;
+}
+
 .page-text {
     display: flex;
     justify-content: space-evenly;
@@ -92,40 +96,44 @@ h2 {
 @media only screen and (max-width: 400px) {
     body {
         background-position-x: 45%;
+        background-size: 90rem;
     }
 
     .page-text {
+        display: none;
+    }
+
+    .page-text-mobile {
+        display: flex;
         flex-direction: column;
         margin-bottom: 2vw;
         gap: 6vw;
     }
-    #text-container-left {
-        width: 92vw;
-        padding: 5vw;
-        margin: auto;
-    }
-    #text-container-right {
+    #text-container-mobile {
+        background-color: rgba(255, 255, 255, 0.5);
         width: 92vw;
         padding: 5vw;
         margin: auto;
     }
 
-    .location-title, .hours-title, .food-title, .admission-title, .accessibility-title, .shop-title {
+    .location-title-mobile, .hours-title-mobile, .food-title-mobile, .admission-title-mobile, .accessibility-title-mobile, .shop-title-mobile {
         margin-bottom: 1.5vw;
     }
-    .hours-title, .food-title, .accessibility-title, .shop-title {
+    .hours-title-mobile, .food-title-mobile, .accessibility-title-mobile, .shop-title-mobile, .admission-title-mobile {
         margin-top: 5vw;
     }
 
     
-    .entrance-fee {
+    .entrance-fee-mobile {
+        text-decoration: underline;
         text-decoration-thickness: 0.6vw;
     }
     
-    .hours {
+    .hours-mobile {
         width: 83vw;
     }
-    .hours-text {
+    .hours-text-mobile {
+        text-decoration: underline;
         text-decoration-thickness: 0.6vw;
         line-height: 7.5vw;
     }
