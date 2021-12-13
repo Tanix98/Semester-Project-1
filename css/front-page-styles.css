@@ -31,6 +31,10 @@ body {
     margin: auto;
 }
 
+.undertitle {
+    padding-bottom: 2vw;
+}
+
 .categories {
     display: flex;
     flex-wrap: wrap;
@@ -90,6 +94,9 @@ body {
     .main-text {
         padding-left: 5vw;
         padding-right: 5vw;
+    }
+    .undertitle {
+        padding-bottom: 5vw;
     }
     .categories {
         display: flex;
