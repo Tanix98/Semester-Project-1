@@ -1,461 +1,269 @@
 @font-face {
-    font-family: "Ubuntu-Bold";
-    src: url("../resources/fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-B.ttf");
+    font-family: "Roboto-Regular";
+        src: url("/resources/fonts/Roboto/Roboto-Regular.ttf");
 }
-
 @font-face {
-    font-family: "Ubuntu-Medium";
-    src: url("../resources/fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-M.ttf");
+    font-family: "Roboto-Medium";
+        src: url("/resources/fonts/Roboto/Roboto-Medium.ttf");
 }
-
 @font-face {
-    font-family: "Spartan-Medium";
-    src: url("../resources/fonts/Spartan/static/Spartan-Medium.ttf");
+    font-family: "Roboto-Bold";
+        src: url("/resources/fonts/Roboto/Roboto-Bold.ttf");
 }
 
-@font-face {
-    font-family: "Spartan-Bold";
-    src: url("../resources/fonts/Spartan/static/Spartan-Bold.ttf");
-}
-
-* {
+*, *:before, *:after {
     box-sizing: border-box;
-    margin: 0;
+    margin:0;
     padding: 0;
 }
 
-h1 {
-    font-family: "Ubuntu-Bold", Arial, Helvetica; 
-    font-size: 5vw;
+p, h1 {
+    font-family: "Roboto-Regular", Arial, Helvetica;
 }
 
-.undertitle { 
-    font-size: 2.5vw;
-}
-
-h2 {
-    font-family: "Spartan-Medium", Tahoma, Verdana;
-    font-size: 2vw;
-}
-
-.undertitle {
-    font-family: "Ubuntu-Medium", Arial, Helvetica;
-}
-
-p {
-    font-family: "Spartan-Medium", Tahoma, Verdana;
-    font-size: 1.5vw;
+h2, h3 {
+    font-family: "Tourney", Tahoma, Verdana;
 }
 
 :root {
-    --white: #FFF;
-    --black: #0000;
-    --grey: #4a4a4a; 
-    --empty-page-background-color: #d3d3d3;
-    --orange: #da7422;
-    --darker-orange: #cf6f20;
-    --blue: #158c87;
-    --darker-blue: #137c77;
-    --dark-green: #12960b;
-    --darker-dark-green: #108a0a; 
-    --red: #e42328;
-    --darker-red: #d82027; 
-    --light-green: #42c329;
-    --darker-light-green: #3eb427;
+    --light-blue: #396dff;
+    --light-orange: #f08036;
+    --dark-blue: #2c55c4; 
+    --dark-orange: #a75a27;
+    --white: #FFF; 
 }
 
-body {
-    background-color: var(--empty-page-background-color)
-}
-
-/* main */
-
-.header-space {
-    padding-bottom: 3vw;
-    color: transparent;
-}
-
-.page-title {
-    text-align: center;
-    padding-bottom: 3vw;
-}
-
-main {
-    padding: 2vw;
-    background-color: rgba(255, 255, 255, 0.4);
-    min-height: 100vh;
-}
-
-
-
-/* header */
-
-header {
-    background-color: var(--white);
-    height: 4vw;
-    width: 100%;
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-    font-size: 1.2vw;
-}
+/* NAV BEGINNING */
 
 nav {
-    display: flex;
-    align-items: center;
-}
-
-nav a {
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-    font-family: "Spartan-Bold";
-}
-
-.header-museum-logo {
-    display: flex;
-}
-
-.header-museum-logo a {
-    width: 16.4vw;
-    margin-left: 3vw;
-    margin-right: 5vw;
-    padding: 0.4vw;
-}
-
-.header-museum-logo img {
-    width: 100%;
-    display: flex;
-}
-
-.header-museum-categories {
-    display: flex;
-    gap: 0.6vw;
-    margin-left: 3vw;
-    align-items:center;
-    justify-content:center;
-}
-
-.header-museum-categories a {
-    display: flex;
-    align-items: center;
-}
-
-.header-explore-button, .header-exhibitionspaces-button, .header-specialevents-button, .header-getinvolved-button, .header-visit-button {
-    color: var(--white);
-    padding: 0.5vw 0.5vw;
-    text-align: center;
-    height: 4vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
-}
-.header-explore-button {
-    background-color: var(--orange);
-}
-.header-explore-button:hover {
-    background-color: var(--darker-orange);
-}
-.header-explore-button:focus {
-    background-color: var(--darker-orange);
-}
-.header-exhibitionspaces-button {
-    background-color: var(--blue);
+    display: grid;
+    grid-area: nav;
+    /*grid-template-rows: auto;*/
+    justify-content: center;
+    /*gap: 1.2vw;*/
     width: 12vw;
-}
-.header-exhibitionspaces-button:hover {
-    background-color: var(--darker-blue);
-}
-.header-exhibitionspaces-button:focus {
-    background-color: var(--darker-blue);
-}
-.header-specialevents-button {
-    background-color: var(--dark-green);
-    width: 15vw;
-}
-.header-specialevents-button:hover {
-    background-color: var(--darker-dark-green);
-}
-.header-specialevents-button:focus {
-    background-color: var(--darker-dark-green);
-}
-.header-getinvolved-button {
-    background-color: var(--red);
-}
-.header-getinvolved-button:hover {
-    background-color: var(--darker-red);
-}
-.header-getinvolved-button:focus {
-    background-color: var(--darker-red);
-}
-.header-visit-button {
-    background-color: var(--light-green);
-}
-.header-visit-button:hover {
-    background-color: var(--darker-light-green);
-}
-.header-visit-button:focus {
-    background-color: var(--darker-light-green);
-}
-
-/* hamburger menu */
-
-#hamburger-menu {
-    display: none;
-}
-
-#header-hamburger-menu-button {
-    display: none;
+    min-height: 100vh;
+    position: fixed;
+    /* min-width: 10rem; */
+    background-image: url(../resources/images/Backgrounds/side-menu-background.png);
+    background-attachment: fixed;
+    align-items: center;
     z-index: 3;
 }
 
-label[for=header-hamburger-menu-button] img {
-    width: 2.5vw;
-    margin-left: 1.5vw;
+nav img {
+    /*width: 9vw;
+    margin-bottom: 2vw /*35px;
+    margin-top: 0.3vw /*6px;*/
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.2vw;
+    font-size: 1.1vw;
+    font-weight: bold;
+    color: var(--light-blue);
+    letter-spacing: 0.05vw;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+.hamburger-menu-icon {
+    visibility: hidden;
+    display: contents;
+}
+
+.game-hub-logo-home {
+    margin: auto;
+}
+
+.game-hub-logo-home a{
+    /*padding: 20px;*/
+}
+
+.game-hub-logo-home img {
+    width: 9vw;
+    /*margin: 0;*/
+}
+
+.wish-cart-profile-buttons {
+    /*margin: 0;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.wish-cart-profile-buttons img {
+    margin: 0.5vw;
+    max-width: 2vw;
+    max-height: 2vw;
+}
+
+.profile-button-loggedout img {
+    border: 0.2vw solid var(--light-orange);
+}
+
+.profile-button-loggedin img {
+    border: 0.2vw solid var(--light-blue);
+}
+
+.sidebar-search-box {
+    position: relative;
+}
+
+.wrapper {
+    width: 10vw;
+    margin: auto;
+}
+
+.sidebar-search-box input[type=search] {
+    color: var(--white);
+    padding: 0.5vw;
+    padding-left: 1.9vw;
+    border: 0.2vw solid var(--white);
+    background: rgba(0,0,0,0.3); 
+    font-size: 0.95vw;
+    outline: none;
+    width: 10vw;
+    height: 2.1vw;
+}
+
+.search-box-icon-1 {
+    position: absolute;
+    color: var(--white);
+    padding-left: 0.5vw;
+    padding-top: 0.45vw;
+}
+
+.search-box-icon-1 img {
+    width: 1.2vw;
+}
+
+ul.game-store-menu-title {
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 0.05vw;
+    font-family: "Tourney", Tahoma, Verdana;
+    font-size: 1.2vw;
+    border-bottom: 0.22vw solid var(--light-blue);;
+    /*margin-bottom: 10px;*/
+    /*margin-top: 8px;*/
+}
+
+ul.game-store-menu-title a:hover {
+    color: var(--light-blue) !important;
+}
+
+ul.game-store-menu a:hover {
+    color: var(--dark-blue);
+}
+
+ul.resale-market-menu-title a, ul.resale-market-menu a {
+    color: var(--light-orange);
+}
+
+ul.resale-market-menu-title {
+    color: var(--light-orange);
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 0.05vw;
+    font-family: "Tourney", Tahoma, Verdana;
+    font-size: 1.2vw;
+    border-bottom: 0.22vw solid var(--light-orange);
+    /*margin-bottom: 10px;*/
+    /*margin-top: 0.5rem;*/
+}
+
+ul.resale-market-menu-title a:hover {
+    color: var(--light-orange) !important;
+}
+
+ul.resale-market-menu a:hover {
+    color: var(--dark-orange);
+}
+
+.sell-game-button a {
+    background-color: var(--light-orange);
+    color: var(--white);
+    padding: 0.6vw 1vw;
+    text-decoration: none;
+    font-size: 0.9vw;
+    text-transform: uppercase;
+    /*margin-top: 2rem;*/
+    /*margin-bottom: 4rem;*/
+}
+
+.customer-service-button {
+    text-align: center;
+}
+
+.customer-service-button img {
+    /*margin: 15px;*/
+    height: 2vw;
+    width: 2vw;
+}
+
+.gamehub-copyright {
+    color: var(--white);
+    font-size: 0.4vw;
+    text-align: center;
+    /*margin-bottom: 0.6rem;*/
+}
+
+/* NAV END */
+
+/* MAIN BEGINNING */
+
+main {
+    grid-area: main;
+    display: grid;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 12.5vw;
+    grid-template-rows: 100%;
+    grid-template-areas: 'nav main';
+    font-family: "Roboto-Medium", Arial, Helvetica;
+    background-image: url(../resources/images/Backgrounds/gradient-background.jpg);
+    /* background-size: 100vw 100vh; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #1E1E1E;
+}
+
+#gamehub-logo-mobile {
     display: none;
 }
 
-#header-hamburger-menu-button:checked ~ #hamburger-menu {
-    display: flex;
-    z-index: 2;
-    background-color: var(--white);
-    height: 100vh;
-}
-
-.hamburger-menu-copyright {
-    font-family: "Spartan-Medium";
-    margin: 3vw;
-    height: 0.85vw;
-    font-size: 2vw;
-    padding-top: 0.08vw;
-}
-
-.hamburger-menu-social-medias {
-    display: flex;
-    margin: 3vw;
-    margin-left: auto;
-    gap: 1vw;
-    align-items: center;
-    height: 1.7vw;
-}
-.hamburger-menu-social-medias img {
-    max-width: 8vw;
-    padding-top: 0.3vw;
-}
-.hamburger-menu-museum-categories {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 5vw;
-}
-.hamburger-menu-explore-button, .hamburger-menu-exhibitionspaces-button, .hamburger-menu-specialevents-button, .hamburger-menu-getinvolved-button, .hamburger-menu-visit-button {
-    color: var(--white);
-    padding: 2.5vw 2.5vw;
-    text-align: center;
-    height: 20vw;
-    padding-left: 20vw;
-    padding-right: 20vw;
-}
-.hamburger-menu-explore-button {
-    background-color: var(--orange);
-}
-.hamburger-menu-explore-button:hover {
-    background-color: var(--darker-orange);
-}
-.hamburger-menu-explore-button:focus {
-    background-color: var(--darker-orange);
-}
-.hamburger-menu-exhibitionspaces-button {
-    background-color: var(--blue);
-    width: 12vw;
-}
-.hamburger-menu-exhibitionspaces-button:hover {
-    background-color: var(--darker-blue);
-}
-.hamburger-menu-exhibitionspaces-button:focus {
-    background-color: var(--darker-blue);
-}
-.hamburger-menu-specialevents-button {
-    background-color: var(--dark-green);
-    width: 15vw;
-}
-.hamburger-menu-specialevents-button:hover {
-    background-color: var(--darker-dark-green);
-}
-.hamburger-menu-specialevents-button:focus {
-    background-color: var(--darker-dark-green);
-}
-.hamburger-menu-getinvolved-button {
-    background-color: var(--red);
-}
-.hamburger-menu-getinvolved-button:hover {
-    background-color: var(--darker-red);
-}
-.hamburger-menu-getinvolved-button:focus {
-    background-color: var(--darker-red);
-}
-.hamburger-menu-visit-button {
-    background-color: var(--light-green);
-}
-.hamburger-menu-visit-button:hover {
-    background-color: var(--darker-light-green);
-}
-.hamburger-menu-visit-button:focus {
-    background-color: var(--darker-light-green);
-}
-
-/* footer */
-
-footer {
-    background-color: var(--grey);
-    color: var(--white);
-    font-family: "Spartan-Medium";
-    height: 3.2vw;
-    font-size: 1vw;
-}
-
-.footer-container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    gap: 5vw;
-}
-
-.footer-copyright {
-    margin: 3vw;
-    height: 0.85vw;
-    font-size: 0.8vw;
-    padding-top: 0.08vw;
-}
-
-.footer-email {
-    display: flex;
-    margin: auto;
-    gap: 0.2vw;
-    height: 1.2vw;
-}
-.footer-email-icon img {
-    max-width: 1.8vw;
-}
-.footer-email-address a {
-    text-decoration: none;
-    color: var(--white);
-}
-.footer-email-address {
-    list-style-type: none;
-    font-family: "Spartan-Medium";
-}
-
-.footer-social-medias {
-    display: flex;
-    margin: 3vw;
-    margin-left: auto;
-    gap: 1vw;
-    align-items: center;
-    height: 1.7vw;
-}
-.footer-social-medias img {
-    max-width: 1.8vw;
-    padding-top: 0.3vw;
-}
-
-@media only screen and (max-width: 758px) {
-    .header-space {
-        padding-bottom: 1.4rem;
-    }
-    header {
-        height: 1.9rem;
-        font-size: 0.58rem;
-    }
-    .header-museum-logo img {
-        width: 7.3rem;
-    }
-    .header-explore-button, .header-exhibitionspaces-button, .header-specialevents-button, .header-getinvolved-button, .header-visit-button {
-        min-height: 1.9rem;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    /*.header-museum-logo img {
-        padding-top: 0.1rem;
-    }*/
-    .header-museum-logo a {
-        display: flex;
-        justify-content: center;
-        padding-top: 0.2rem;
-    }
-    label[for=header-hamburger-menu-button] img{
-        width: 1.2rem;
-        margin-left: 0.7rem;
-        display: block;
-    }
-    .hamburger-menu-museum-logo img {
-        width: 7.3rem;
-    }
-    .hamburger-menu-social-medias img {
-        width: 15vw;
-    }
-    .hamburger-menu-email {
-        font-family: "Spartan-Medium";
-    }
-    .hamburger-menu-email-icon img {
-        width: 13vw;
-    }
-    .hamburger-menu-email-address a {
-        text-decoration: none;
-        color: var(--black);
-    }
-    .hamburger-menu-email-address {
-        list-style-type: none;
-    }
-    .header-museum-logo {
-        margin: auto;
-    }
-    .header-museum-categories {
-        display: none;
-    }
-}
+/* MAIN END */
 
 @media only screen and (max-width: 400px) {
-    .page-title {
-        padding-bottom: 6vw;
+    nav {
+        visibility: hidden; 
+        display: contents;
     }
-    .header-space {
-        padding-bottom: 2.5rem;
+    #hamburger-menu-icon {
+        visibility: visible !important;
+        display: block !important;
+        width: 8vw;
+        margin-left: 4vw;
+        margin-top: 4vw;
+        cursor: pointer;
     }
-    header {
-        height: 3rem;
-        font-size: 4.5vw;
+    #gamehub-logo-mobile {
+        display: flex !important;
+        margin: auto;
     }
-    .header-museum-logo img {
-        width: 13rem;
+    #gamehub-logo-mobile a {
+        padding: 2vw;
     }
-    label[for=header-hamburger-menu-button] img {
-        width: 1.5rem;
-        margin-left: 0.6rem;
-    }
-
-    footer {
-        display: none;
-    }
-
-    h1 {
-        font-size: 10vw;
-    }
-    .undertitle { 
-        font-size: 7vw;
-    }
-    h2 {
-        font-size: 6vw;
-    }
-    p {
-        font-size: 5vw;
-    }
-}
-
-@media only screen and (max-width: 280px) {
-    label[for=header-hamburger-menu-button] img {
-        margin-right: 3rem;
+    #gamehub-logo-mobile img{
+        width: 32vw;
+        margin-top: -5vw
     }
 }

@@ -1,0 +1,254 @@
+:root {
+    --light-blue: #396dff;
+    --light-orange: #f08036;
+    --dark-blue: #2c55c4; 
+    --dark-orange: #a75a27;
+    --white: #FFF; 
+}
+
+.game {
+    font-size: 1.2vw;
+    color: var(--white);
+    /* padding: 10px; */
+    width: 50vw;
+    height: 100vh;
+    background-image: url(../resources/images/Backgrounds/side-menu-background.png);
+    background-attachment: fixed;
+    grid-template-rows: auto;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.game-content {
+    /* margin: 0 8rem; */
+    padding: 2vw 10vw;
+}
+
+.game-banner {
+    display: flex;
+    justify-content: center;
+    /* width:100%; */
+    margin-bottom: 0.5vw;
+    margin: auto;
+}
+
+.game-banner img {
+    width: 16vw;
+    /* max-width: 50rem; */
+    border: 0.22vw solid var(--light-orange);
+    margin: auto;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+}
+
+.game-title {
+    color: var(--light-blue);
+    font-size: 1.6vw;
+}
+
+.game-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5vw;
+    padding-top: 1vw;
+    /* height: 6.8rem; */
+}
+
+.grid-item2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.grid-item2-1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.item2, .item3, .item4 {
+    margin-left: 0.8vw;
+}
+
+.item5 {
+    display:flex;
+    align-items: flex-start;
+}
+
+.game-price {
+    font-family: "Roboto-Medium";
+    font-size: 1vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.add-to-cart-button {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 2.1vw;
+}
+
+.add-to-cart-button a {
+    background-color: var(--light-orange);
+    color: var(--white);
+    padding: 0.4vw 0.6vw;
+    text-decoration: none;
+    font-size: 1vw;
+    justify-content: center;
+}
+
+.add-to-cart-button:hover {
+    position: relative;
+    animation-name: button-shake; 
+    animation-duration: 1s;
+}
+
+@keyframes button-shake {
+    0% {transform: rotate(0deg);}
+    10% {transform: rotate(-1deg);}
+    20% {transform: rotate(1deg);}
+    30% {transform: rotate(0deg);}
+    40% {transform: rotate(1deg);}
+    50% {transform: rotate(-1deg);}
+    60% {transform: rotate(0deg);}
+    70% {transform: rotate(-1deg);}
+    80% {transform: rotate(1deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.game-wish-list-button {
+    position: relative;
+    max-height: 1.7vw;
+}
+
+.game-wish-list-button img {
+    max-height: 1.7vw;
+}
+
+.transition-image {
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.transition-image:hover {
+    opacity: 1;
+}
+
+.game-platforms {
+    font-size: 1.3vw;
+    color: var(--light-orange);
+    font-family: "Tourney";
+    display: flex;
+    justify-content: center;
+    padding-top: 0.4vw;
+}
+
+.seller-name {
+    font-family: "Roboto-Bold";
+    font-size: 1vw;
+    padding-right: 0.8vw;
+    color: var(--light-blue);
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.4vw;
+}
+
+.seller-profile {
+    padding-top: 0.4vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.seller-profile img {
+    border: 0.2vw solid var(--light-blue);
+    max-width: 2vw;
+}
+
+.game-desc {
+    font-size: 1.1vw;
+    padding-top: 1.5vw;
+    /* display: grid; */
+}
+
+@media screen and (max-width: 400px) {
+    #gamehub-logo-mobile {
+        margin-left: 23vw;
+    }
+    .game {
+        font-size: 6vw;
+        width: 80vw;
+        height: 100vh;
+        background-image: none;
+        margin-left: -10vw;
+    }
+    .game-content {
+        /* margin: 0 8rem; */
+        padding: 2vw 10vw;
+    }
+    .game-banner {
+        margin-top: -5vw;
+        margin-bottom: 4vw;
+    }
+    .game-banner img {
+        width: 70vw;
+        border: 1vw solid var(--light-orange);
+        margin-left: 18vw;
+    }
+    .game-title {
+        font-size: 6vw;
+    }
+    .game-details {
+        gap: 2vw;
+        padding-top: 1vw;
+    }
+    .item2, .item3, .item4 {
+        margin-left: 2vw;
+    }
+    .game-price {
+        font-size: 4vw;
+    }
+    .add-to-cart-button {
+        height: 8vw;
+        margin-left: -1vw;
+    } 
+    .add-to-cart-button a {
+        padding: 2vw 2.5vw;
+        font-size: 4vw;
+    }
+    .game-wish-list-button {
+        max-height: 7vw;
+    }
+    .game-wish-list-button img {
+        max-height: 7vw;
+        margin-top: 10vw;
+        margin-left: -18vw;
+    }
+    .game-platforms {
+        font-size: 5vw;
+        padding-top: 5.5vw;
+    }
+    .seller-name {
+        font-size: 4vw;
+        padding-right: 4vw;
+        padding-bottom: 1vw;
+    }
+    .seller-profile {
+        padding-top: 4vw;
+    }
+    .seller-profile img {
+        border: 0.6vw solid var(--light-blue);
+        max-width: 8vw;
+        margin-right: 2vw;
+    }
+    .game-desc {
+        font-size: 5vw;
+        padding-top: 5vw;
+        width: 70vw;
+        margin-left: 7vw;
+    }
+}

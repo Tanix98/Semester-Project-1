@@ -1,119 +1,230 @@
 :root {
-    --white: #FFF;
-    --black: #0000;
-    --grey: #4a4a4a; 
-    --orange: #e67a23;
-    --blue: #158c87; 
-    --dark-green: #12960b; 
-    --red: #e42328; 
-    --light-green: #42c329; 
+    --light-blue: #396dff;
+    --light-orange: #f08036;
+    --dark-blue: #2c55c4; 
+    --dark-orange: #a75a27;
+    --white: #FFF; 
 }
 
-body {
-    background-image: url(../resources/images/scott-webb-102825.jpg);
-    background-size: cover;
-    background-color: var(--white);
-    background-position-y: 25%;
-    background-position-x: 20%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+/* Game Store */
 
-/* main */
-
-.welcome-text {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 3vw;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 2vw;
-    width: 75vw;
-    margin: auto;
-}
-
-.categories {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 3vw;
-    padding-top: 2.5vw;
-}
-
-.explore, .exhibition-spaces, .special-events-and-exhibitions, .get-involved, .visit {
-    position: relative;
-    color: var(--white);
-    margin: auto;
-    width: 27vw;
-}
-.explore-image-text, .exhibition-spaces-image-text, .special-events-and-exhibitions-image-text, .get-involved-image-text, .visit-image-text {
-    position: absolute;
+.game-store-title {
+    list-style: none;
     text-align: center;
-    width: 100%;
-    top: 7vw;
-    white-space: wrap;
-    font-family: "Ubuntu-Bold", Arial, Helvetica;
-    font-size: 2vw;
-    pointer-events: none;
 }
 
-.special-events-and-exhibitions-image-text {
-    top: 6vw;
+.game-store-title a {
+    padding: 0.2vw 0.8vw;
+    color: var(--light-blue);
+    font-family: "Tourney", Tahoma, Verdana;
+    font-size: 2.6vw;
+    text-decoration: none;
+    border-bottom: 0.3vw solid var(--light-blue);
 }
 
-.explore-image img, .exhibition-spaces-image img, .special-events-and-exhibitions-image img, .get-involved-image img, .visit-image img {
-    filter: brightness(55%);
-    width: 100%;
+.game-store {
+    display: grid;
+    gap: 1vw;
+    width: 87vw;
+    margin-top: 1vw;
 }
 
-.explore-image:hover, .exhibition-spaces-image:hover, .special-events-and-exhibitions-image:hover, .get-involved-image:hover, .visit-image:hover {
-    filter: brightness(110%);
-    width: 100%;
+.game-store-game-banners {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
 }
 
-.get-involved {
-    margin-left: 18vw;
+.left-arrow-mobile img {
+    display: none;
 }
 
-.visit {
-    margin-right: 18vw;
+.right-arrow-mobile img {
+    display: none;
+}
+
+.image-left-overlay-arrow {
+    position: relative;
+}
+.image-left-overlay-arrow:nth-child(2) {
+    position: absolute;
+}
+.left-arrow-overlay img {
+    position: absolute;
+    border: 0 !important;
+    z-index: 2;
+    left: 0;
+    pointer-events: none
+}
+
+.image-right-overlay-arrow {
+    position: relative;
+}
+.image-right-overlay-arrow:nth-child(2) {
+    position: absolute;
+}
+.right-arrow-overlay img {
+    position: absolute;
+    border: 0 !important;
+    z-index: 2;
+    right: 0;
+    pointer-events: none
+}
+
+.game-store img {
+    max-height: 15vw;
+    height: 15vw;
+    margin: 0.8vw;
+    border: 0.22vw solid var(--light-blue);
+}
+
+/* Resale Market */
+
+.resale-market-title {
+    list-style: none;
+    text-align: center;
+}
+
+.resale-market-title a {
+    padding: 0.2vw 0.8vw;
+    color: var(--light-orange);
+    font-family: "Tourney", Tahoma, Verdana;
+    font-size: 2.6vw;
+    text-decoration: none;
+    border-bottom: 0.3vw solid var(--light-orange);
+}
+
+.resale-market {
+    display: grid;
+    gap: 1vw;
+    /*margin-top: 2.4vw;*/
+    width: 87vw;
+    margin-top: 1vw;
+}
+
+.resale-market-images-arrows {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+}
+
+.resale-market-game-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: auto;
+}
+
+.resale-market-game-images img {
+    height: 15vw;
+}
+
+.resale-market img {
+    margin: 0.8vw;
+    border: 0.22vw solid var(--light-orange);
+}
+
+.left-arrow {
+    display: grid;
+    justify-content: end;
+}
+
+.left-arrow img {
+    border: 0;
+    max-width: 1.5vw;
+    margin-top: 7vw;
+    cursor: pointer;
+}
+
+.right-arrow {
+    display: grid;
+}
+
+.right-arrow img {
+    border: 0;
+    max-width: 1.5vw;
+    margin-top: 7vw;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 400px) {
-    body {
-        background-image: url(../resources/images/scott-webb-102825.jpg);
-        background-size: fill;
+    /* game store */
+    .game-store-title {
+        height: 2vw;
+        margin-bottom: -4vw;
     }
-    .welcome-text {
-        width: 92vw;
-        padding-top: 5vw;
-        padding-bottom: 5vw;
+    .game-store-title a {
+        padding: 0.6vw 3vw;
+        font-size: 8vw;
+        margin-left: 10vw;
+        border-bottom: 0.8vw solid var(--light-blue);
     }
-    .main-text {
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
-    .categories {
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 2vw;
-        padding-top: 5vw;
-        padding-bottom: 2.5vw;
-    }
-    .get-involved {
-        margin-left: 0;
-    }
-    .visit {
+    .game-store img {
+        max-height: 40vw;
+        height: 40vw;
+        border: 0.8vw solid var(--light-blue);
         margin: auto;
     }
-    .explore, .exhibition-spaces, .special-events-and-exhibitions, .get-involved, .visit {
-        width: 45vw;
+    .left-arrow-overlay {
+        display: none;
     }
-    .explore-image-text, .exhibition-spaces-image-text, .special-events-and-exhibitions-image-text, .get-involved-image-text, .visit-image-text {
-        width: 100%;
-        top: 11vw;
-        font-size: 3.8vw;
+    .left-store-image {
+        display: none;
     }
-    .special-events-and-exhibitions-image-text {
-        top: 9vw;
+    .image-right-overlay-arrow {
+        display: none;
+    }
+    .left-arrow-mobile img {
+        display: block;
+        border: 0;
+        width: 5vw;
+        height: 9vw;
+        margin-top: 18vw;
+        margin-left: 8vw;
+        margin-right: 2vw;
+        cursor: pointer;
+    }
+    .right-arrow-mobile img {
+        display: block;
+        border: 0;
+        width: 5vw;
+        height: 9vw;
+        margin-top: 18vw;
+        margin-left: 2vw;
+        cursor: pointer;
+    }
+    /* resale market */
+    .resale-market-title {
+        margin-top: 4vw;
+        margin-bottom: -4vw;
+        height: 2vw;
+    }
+    .resale-market-title a {
+        padding: 0.6vw 3vw;
+        font-size: 8vw;
+        margin-left: 10vw;
+        border-bottom: 0.8vw solid var(--light-orange);
+    }
+    .resale-market-game-images {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 8.5vw;
+    }
+    .resale-market-game-images {
+        align-items: center;
+    }
+    .resale-market-game-images img {
+        height: auto;
+        width: 40vw;
+    }
+    .resale-market img {
+        border: 0.8vw solid var(--light-orange);
+    }
+    .right-arrow {
+        display: none;
+    }
+    .left-arrow {
+        display: none;
+    }
+    body {
+        grid-template-columns: 0;
     }
 }
