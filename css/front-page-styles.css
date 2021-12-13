@@ -79,6 +79,10 @@ body {
 }
 
 @media only screen and (max-width: 400px) {
+    body {
+        background-image: url(../resources/images/scott-webb-102825.jpg);
+        background-size: fill;
+    }
     .welcome-text {
         width: 92vw;
         padding-top: 5vw;
