@@ -51,14 +51,24 @@ h2 {
     margin-top: 2vw;
 }
 
+/*.span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7 {
+    float: right;
+    text-decoration: inherit;
+}*/
+
 .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7 {
     float: right;
-    text-decoration:inherit;
+    text-decoration: inherit;
 }
 
-.entrance-fee {
-    text-decoration: underline;
-    text-decoration-thickness: 0.2vw;
+.monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
+    display: block;
+    border-bottom: 0.2vw solid;
+    border-bottom-style: dotted;
+    
+}
+.tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
+    padding-top: 0.4vw;
 }
 
 .hours {
@@ -67,9 +77,15 @@ h2 {
 }
 
 .hours-text {
+    /*border-bottom: 0.2vw solid;*/
+    /*text-decoration: underline;
+    text-decoration-thickness: 0.2vw;*/
+    line-height: 2vw;
+}
+
+.entrance-fee {
     text-decoration: underline;
     text-decoration-thickness: 0.2vw;
-    line-height: 2vw;
 }
 
 @media only screen and (max-width: 700px) {
@@ -123,7 +139,6 @@ h2 {
         margin-top: 5vw;
     }
 
-    
     .entrance-fee-mobile {
         text-decoration: underline;
         text-decoration-thickness: 0.6vw;
@@ -133,9 +148,15 @@ h2 {
         width: 83vw;
     }
     .hours-text-mobile {
-        text-decoration: underline;
-        text-decoration-thickness: 0.6vw;
         line-height: 7.5vw;
+    }
+
+    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
+        border-bottom: 0.6vw solid;
+        border-bottom-style: dotted;
+    }
+    .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
+        padding-top: 1.2vw;
     }
 
     h1 {
