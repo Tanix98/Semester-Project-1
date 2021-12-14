@@ -487,19 +487,19 @@ footer {
     }
     /* hamburger menu buttons */
     .hamburger-menu-museum-categories {
-        height: 50vh;
         gap: 3vw;
-        padding-top: 8vw;
         left: 21vw;
+        top: 14vh;
     }
     .hamburger-menu-museum-categories a {
         width: 55vw;
-        align-items: center;
     }
     .hamburger-menu-explore-button, .hamburger-menu-exhibitionspaces-button, .hamburger-menu-specialevents-button, .hamburger-menu-getinvolved-button, .hamburger-menu-visit-button {
         font-size: 5vw;
         height: 20vw;
+        display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     /* header */
