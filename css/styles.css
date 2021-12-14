@@ -494,10 +494,12 @@ footer {
     }
     .hamburger-menu-museum-categories a {
         width: 55vw;
+        align-items: center;
     }
     .hamburger-menu-explore-button, .hamburger-menu-exhibitionspaces-button, .hamburger-menu-specialevents-button, .hamburger-menu-getinvolved-button, .hamburger-menu-visit-button {
         font-size: 5vw;
         height: 20vw;
+        align-items: center;
     }
 
     /* header */
