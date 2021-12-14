@@ -1,21 +1,25 @@
 @font-face {
     font-family: "Ubuntu-Bold";
     src: url("../resources/fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-B.ttf");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Ubuntu-Medium";
     src: url("../resources/fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-M.ttf");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Spartan-Medium";
     src: url("../resources/fonts/Spartan/static/Spartan-Medium.ttf");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Spartan-Bold";
     src: url("../resources/fonts/Spartan/static/Spartan-Bold.ttf");
+    font-display: swap;
 }
 
 * {
@@ -26,6 +30,7 @@
 
 h1 {
     font-family: "Ubuntu-Bold", Arial, Helvetica; 
+    font-display: swap;
     font-size: 5vw;
 }
 
@@ -35,21 +40,25 @@ h1 {
 
 h2 {
     font-family: "Spartan-Medium", Tahoma, Verdana;
+    font-display: swap;
     font-size: 2vw;
 }
 
 .undertitle {
     font-family: "Ubuntu-Medium", Arial, Helvetica;
+    font-display: swap;
 }
 
 p {
     font-family: "Spartan-Medium", Tahoma, Verdana;
+    font-display: swap;
     font-size: 1.5vw;
     margin-bottom: 1.5vw;
 }
 
 .p-bottom {
     font-family: "Spartan-Medium", Tahoma, Verdana;
+    font-display: swap;
     font-size: 1.5vw;
 }
 
@@ -118,6 +127,7 @@ nav a {
 ul {
     list-style-type: none;
     font-family: "Spartan-Bold";
+    font-display: swap;
 }
 
 .header-museum-logo {
@@ -237,6 +247,7 @@ footer {
     background-color: var(--grey);
     color: var(--white);
     font-family: "Spartan-Medium";
+    font-display: swap;
     height: 3.2vw;
     font-size: 1vw;
 }
@@ -271,6 +282,7 @@ footer {
 .footer-email-address {
     list-style-type: none;
     font-family: "Spartan-Medium";
+    font-display: swap;
 }
 
 .footer-social-medias {
@@ -335,6 +347,7 @@ footer {
     /* email */
     .hamburger-menu-email {
         font-family: "Spartan-Medium";
+        font-display: swap;
         position: fixed;
         top: 87vh;
         left: 8.9rem;
@@ -355,6 +368,7 @@ footer {
     /* copyright */
     .hamburger-menu-copyright {
         font-family: "Spartan-Medium";
+        font-display: swap;
         height: 0.85vw;
         font-size: 1em;
         position: fixed;
@@ -376,7 +390,6 @@ footer {
     }
     /* menu buttons */
     .hamburger-menu-museum-categories {
-        height: 50vh;
         display: flex;
         flex-direction: column;
         gap: 0.6rem;
@@ -393,6 +406,9 @@ footer {
         text-align: center;
         font-size: 1.5em;
         transition: background-color 0.2s ease-in;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .hamburger-menu-explore-button {
@@ -543,6 +559,7 @@ footer {
     
     .p-bottom {
         font-family: "Spartan-Medium", Tahoma, Verdana;
+        font-display: swap;
         font-size: 5vw;
     }
 }

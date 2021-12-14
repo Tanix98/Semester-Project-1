@@ -55,6 +55,7 @@ body {
     top: 7vw;
     white-space: wrap;
     font-family: "Ubuntu-Bold", Arial, Helvetica;
+    font-display: swap;
     font-size: 2vw;
     pointer-events: none;
 }

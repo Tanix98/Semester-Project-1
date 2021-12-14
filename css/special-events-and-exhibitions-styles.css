@@ -60,6 +60,7 @@ body {
 
 .image-3-attribution {
     font-family: "Spartan-Medium", Tahoma, Verdana;
+    font-display: swap;
     font-size: 1vw;
     margin-bottom: 1vw;
 }
