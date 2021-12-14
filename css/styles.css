@@ -55,7 +55,7 @@ p {
 
 :root {
     --white: #FFF;
-    --black: #0000;
+    --black: v;
     --grey: #4a4a4a; 
     --empty-page-background-color: #d3d3d3;
     --orange: #da7422;
@@ -65,9 +65,9 @@ p {
     --dark-green: #12960b;
     --darker-dark-green: #108a0a; 
     --red: #e42328;
-    --darker-red: #d82027; 
+    --darker-red: rgb(204, 32, 38); 
     --light-green: #42c329;
-    --darker-light-green: #3eb427;
+    --darker-light-green: #3db126;
 }
 
 body {
@@ -88,7 +88,7 @@ body {
 
 main {
     padding: 2vw;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.5);
     min-height: 100vh;
 }
 
@@ -156,6 +156,7 @@ ul {
     height: 4vw;
     padding-left: 1vw;
     padding-right: 1vw;
+    transition: background-color 0.2s ease-in;
 }
 .header-explore-button {
     background-color: var(--orange);
@@ -227,88 +228,7 @@ label[for=header-hamburger-menu-button] img {
     z-index: 2;
     background-color: var(--white);
     height: 100vh;
-}
-
-.hamburger-menu-copyright {
-    font-family: "Spartan-Medium";
-    margin: 3vw;
-    height: 0.85vw;
-    font-size: 2vw;
-    padding-top: 0.08vw;
-}
-
-.hamburger-menu-social-medias {
-    display: flex;
-    margin: 3vw;
-    margin-left: auto;
-    gap: 1vw;
-    align-items: center;
-    height: 1.7vw;
-}
-.hamburger-menu-social-medias img {
-    max-width: 8vw;
-    padding-top: 0.3vw;
-}
-.hamburger-menu-museum-categories {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 5vw;
-}
-.hamburger-menu-explore-button, .hamburger-menu-exhibitionspaces-button, .hamburger-menu-specialevents-button, .hamburger-menu-getinvolved-button, .hamburger-menu-visit-button {
-    color: var(--white);
-    padding: 2.5vw 2.5vw;
-    text-align: center;
-    height: 20vw;
-    padding-left: 20vw;
-    padding-right: 20vw;
-}
-.hamburger-menu-explore-button {
-    background-color: var(--orange);
-}
-.hamburger-menu-explore-button:hover {
-    background-color: var(--darker-orange);
-}
-.hamburger-menu-explore-button:focus {
-    background-color: var(--darker-orange);
-}
-.hamburger-menu-exhibitionspaces-button {
-    background-color: var(--blue);
-    width: 12vw;
-}
-.hamburger-menu-exhibitionspaces-button:hover {
-    background-color: var(--darker-blue);
-}
-.hamburger-menu-exhibitionspaces-button:focus {
-    background-color: var(--darker-blue);
-}
-.hamburger-menu-specialevents-button {
-    background-color: var(--dark-green);
-    width: 15vw;
-}
-.hamburger-menu-specialevents-button:hover {
-    background-color: var(--darker-dark-green);
-}
-.hamburger-menu-specialevents-button:focus {
-    background-color: var(--darker-dark-green);
-}
-.hamburger-menu-getinvolved-button {
-    background-color: var(--red);
-}
-.hamburger-menu-getinvolved-button:hover {
-    background-color: var(--darker-red);
-}
-.hamburger-menu-getinvolved-button:focus {
-    background-color: var(--darker-red);
-}
-.hamburger-menu-visit-button {
-    background-color: var(--light-green);
-}
-.hamburger-menu-visit-button:hover {
-    background-color: var(--darker-light-green);
-}
-.hamburger-menu-visit-button:focus {
-    background-color: var(--darker-light-green);
+    width: 22rem;
 }
 
 /* footer */
@@ -383,47 +303,205 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    /*.header-museum-logo img {
-        padding-top: 0.1rem;
-    }*/
-    .header-museum-logo a {
-        display: flex;
-        justify-content: center;
-        padding-top: 0.2rem;
+    .header-museum-categories {
+        display: none;
     }
-    label[for=header-hamburger-menu-button] img{
+    .header-museum-logo a {
+        position: fixed;
+        right: 37.5vw;
+        top: 0.1rem;
+    }
+    /* hamburger menu */
+    label[for=header-hamburger-menu-button] img {
         width: 1.2rem;
         margin-left: 0.7rem;
+        top: 0.45rem;
         display: block;
+        position: fixed;
+        z-index: 3;
+    }
+    .hamburger-menu-museum-logo {
+        left: 7.5rem;
+        top: 0.2rem;
+        position: fixed;
     }
     .hamburger-menu-museum-logo img {
         width: 7.3rem;
     }
-    .hamburger-menu-social-medias img {
-        width: 15vw;
-    }
+    /*#hamburger-menu {
+        display: flex;
+        flex-direction: column;
+    }*/
+    /* email */
     .hamburger-menu-email {
         font-family: "Spartan-Medium";
+        position: fixed;
+        top: 87vh;
+        left: 8.9rem;
     }
     .hamburger-menu-email-icon img {
-        width: 13vw;
+        width: 28px;
+        position: fixed;
+        top: 86.2vh;
+        left: 6.9rem;
     }
     .hamburger-menu-email-address a {
         text-decoration: none;
-        color: var(--black);
+        color: black;
     }
     .hamburger-menu-email-address {
         list-style-type: none;
     }
-    .header-museum-logo {
-        margin: auto;
+    /* copyright */
+    .hamburger-menu-copyright {
+        font-family: "Spartan-Medium";
+        height: 0.85vw;
+        font-size: 1em;
+        position: fixed;
+        top: 96vh;
+        left: 4.6rem;
     }
-    .header-museum-categories {
-        display: none;
+    /* social media */
+    .hamburger-menu-social-medias {
+        display: flex;
+        margin-left: auto;
+        gap: 0.6rem;
+        align-items: center;
+        top: 74vh;
+        left: 6rem;
+        position: fixed;
+    }
+    .hamburger-menu-social-medias img {
+        height: 28px;
+    }
+    /* menu buttons */
+    .hamburger-menu-museum-categories {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        top: 12vh;
+        position: fixed;
+        left: 5.5rem;
+    }
+    .hamburger-menu-museum-categories a {
+        width: 11.26rem;
+    }
+    .hamburger-menu-explore-button, .hamburger-menu-exhibitionspaces-button, .hamburger-menu-specialevents-button, .hamburger-menu-getinvolved-button, .hamburger-menu-visit-button {
+        color: var(--white);
+        padding: 0.75rem;
+        text-align: center;
+        font-size: 1.5em;
+        transition: background-color 0.2s ease-in;
+    }
+
+    .hamburger-menu-explore-button {
+        background-color: var(--orange);
+    }
+    .hamburger-menu-explore-button:hover {
+        background-color: var(--darker-orange);
+    }
+    .hamburger-menu-explore-button:focus {
+        background-color: var(--darker-orange);
+    }
+    .hamburger-menu-exhibitionspaces-button {
+        background-color: var(--blue);
+        width: 12vw;
+    }
+    .hamburger-menu-exhibitionspaces-button:hover {
+        background-color: var(--darker-blue);
+    }
+    .hamburger-menu-exhibitionspaces-button:focus {
+        background-color: var(--darker-blue);
+    }
+    .hamburger-menu-specialevents-button {
+        background-color: var(--dark-green);
+        width: 15vw;
+    }
+    .hamburger-menu-specialevents-button:hover {
+        background-color: var(--darker-dark-green);
+    }
+    .hamburger-menu-specialevents-button:focus {
+        background-color: var(--darker-dark-green);
+    }
+    .hamburger-menu-getinvolved-button {
+        background-color: var(--red);
+    }
+    .hamburger-menu-getinvolved-button:hover {
+        background-color: var(--darker-red);
+    }
+    .hamburger-menu-getinvolved-button:focus {
+        background-color: var(--darker-red);
+    }
+    .hamburger-menu-visit-button {
+        background-color: var(--light-green);
+    }
+    .hamburger-menu-visit-button:hover {
+        background-color: var(--darker-light-green);
+    }
+    .hamburger-menu-visit-button:focus {
+        background-color: var(--darker-light-green);
     }
 }
 
 @media only screen and (max-width: 400px) {
+    /* hamburger menu*/
+    label[for=header-hamburger-menu-button] img {
+        width: 1.5rem;
+        margin-top: 0.4rem;
+        margin-left: 0.8rem;
+    }
+    #header-hamburger-menu-button:checked ~ #hamburger-menu {
+        width: 100%;
+    }
+    .hamburger-menu-museum-logo {
+        left: 22vw;
+    }
+    .hamburger-menu-museum-logo img {
+        width: 13rem;
+    }
+    /* hamburger menu copyright */
+    .hamburger-menu-copyright {
+        font-size: 0.7em;
+        top: 96vh;
+        left: 14vw;
+    }
+    /* hamburger menu email */
+    .hamburger-menu-email {
+        top: 86vh;
+        left: 30vw;
+    }
+    .hamburger-menu-email-icon img {
+        width: 7.5vw;
+        top: 86vh;
+        left: 21vw;
+    }
+    /* social media */
+    .hamburger-menu-social-medias {
+        gap: 5vw;
+        top: 73vh;
+        left: 21vw;
+    }
+    .hamburger-menu-social-medias img {
+        height: 8.5vw;
+    }
+    /* hamburger menu buttons */
+    .hamburger-menu-museum-categories {
+        height: 50vh;
+        gap: 3vw;
+        padding-top: 8vw;
+        left: 21vw;
+    }
+    .hamburger-menu-museum-categories a {
+        width: 55vw;
+    }
+    .hamburger-menu-explore-button, .hamburger-menu-exhibitionspaces-button, .hamburger-menu-specialevents-button, .hamburger-menu-getinvolved-button, .hamburger-menu-visit-button {
+        font-size: 5vw;
+        height: 20vw;
+    }
+
+    /* header */
+
     .page-title {
         padding-bottom: 6vw;
     }
@@ -434,13 +512,14 @@ footer {
         height: 3rem;
         font-size: 4.5vw;
     }
+    .header-museum-logo a {
+        right: 57vw;
+    }
     .header-museum-logo img {
         width: 13rem;
     }
-    label[for=header-hamburger-menu-button] img {
-        width: 1.5rem;
-        margin-left: 0.6rem;
-    }
+
+    /* footer */
 
     footer {
         display: none;

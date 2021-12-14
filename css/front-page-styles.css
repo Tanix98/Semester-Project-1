@@ -67,7 +67,9 @@ body {
     filter: brightness(55%);
     width: 100%;
 }
-
+.explore-image, .exhibition-spaces-image, .special-events-and-exhibitions-image, .get-involved-image, .visit-image {
+    transition: filter 0.2s ease-in;
+}
 .explore-image:hover, .exhibition-spaces-image:hover, .special-events-and-exhibitions-image:hover, .get-involved-image:hover, .visit-image:hover {
     filter: brightness(110%);
     width: 100%;
