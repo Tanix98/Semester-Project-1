@@ -1,0 +1,554 @@
+@font-face {
+    font-family: "Ubuntu-Bold";
+    src: url("../resources/fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-B.ttf");
+}
+
+@font-face {
+    font-family: "Ubuntu-Medium";
+    src: url("../resources/fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-M.ttf");
+}
+
+@font-face {
+    font-family: "Spartan-Medium";
+    src: url("../resources/fonts/Spartan/static/Spartan-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Spartan-Bold";
+    src: url("../resources/fonts/Spartan/static/Spartan-Bold.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Ubuntu-Bold", Arial, Helvetica; 
+    font-size: 5vw;
+}
+
+.undertitle { 
+    font-size: 2.5vw;
+}
+
+h2 {
+    font-family: "Spartan-Medium", Tahoma, Verdana;
+    font-size: 2vw;
+}
+
+.undertitle {
+    font-family: "Ubuntu-Medium", Arial, Helvetica;
+}
+
+p {
+    font-family: "Spartan-Medium", Tahoma, Verdana;
+    font-size: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.p-bottom {
+    font-family: "Spartan-Medium", Tahoma, Verdana;
+    font-size: 1.5vw;
+}
+
+:root {
+    --white: #FFF;
+    --black: v;
+    --grey: #4a4a4a; 
+    --empty-page-background-color: #d3d3d3;
+    --orange: #da7422;
+    --darker-orange: #cf6f20;
+    --blue: #158c87;
+    --darker-blue: #137c77;
+    --dark-green: #12960b;
+    --darker-dark-green: #108a0a; 
+    --red: #e42328;
+    --darker-red: rgb(204, 32, 38); 
+    --light-green: #42c329;
+    --darker-light-green: #3db126;
+}
+
+body {
+    background-color: var(--empty-page-background-color)
+}
+
+/* main */
+
+.header-space {
+    padding-bottom: 3vw;
+    color: transparent;
+}
+
+.page-title {
+    text-align: center;
+    padding-bottom: 3vw;
+}
+
+main {
+    padding: 2vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    min-height: 100vh;
+}
+
+
+
+/* header */
+
+header {
+    background-color: var(--white);
+    height: 4vw;
+    width: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    font-size: 1.2vw;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    font-family: "Spartan-Bold";
+}
+
+.header-museum-logo {
+    display: flex;
+}
+
+.header-museum-logo a {
+    width: 16.4vw;
+    margin-left: 3vw;
+    margin-right: 5vw;
+    padding: 0.4vw;
+}
+
+.header-museum-logo img {
+    width: 100%;
+    display: flex;
+}
+
+.header-museum-categories {
+    display: flex;
+    gap: 0.6vw;
+    margin-left: 3vw;
+    align-items:center;
+    justify-content:center;
+}
+
+.header-museum-categories a {
+    display: flex;
+    align-items: center;
+}
+
+.header-explore-button, .header-exhibitionspaces-button, .header-specialevents-button, .header-getinvolved-button, .header-visit-button {
+    color: var(--white);
+    padding: 0.5vw 0.5vw;
+    text-align: center;
+    height: 4vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    transition: background-color 0.2s ease-in;
+}
+.header-explore-button {
+    background-color: var(--orange);
+}
+.header-explore-button:hover {
+    background-color: var(--darker-orange);
+}
+.header-explore-button:focus {
+    background-color: var(--darker-orange);
+}
+.header-exhibitionspaces-button {
+    background-color: var(--blue);
+    width: 12vw;
+}
+.header-exhibitionspaces-button:hover {
+    background-color: var(--darker-blue);
+}
+.header-exhibitionspaces-button:focus {
+    background-color: var(--darker-blue);
+}
+.header-specialevents-button {
+    background-color: var(--dark-green);
+    width: 15vw;
+}
+.header-specialevents-button:hover {
+    background-color: var(--darker-dark-green);
+}
+.header-specialevents-button:focus {
+    background-color: var(--darker-dark-green);
+}
+.header-getinvolved-button {
+    background-color: var(--red);
+}
+.header-getinvolved-button:hover {
+    background-color: var(--darker-red);
+}
+.header-getinvolved-button:focus {
+    background-color: var(--darker-red);
+}
+.header-visit-button {
+    background-color: var(--light-green);
+}
+.header-visit-button:hover {
+    background-color: var(--darker-light-green);
+}
+.header-visit-button:focus {
+    background-color: var(--darker-light-green);
+}
+
+/* hamburger menu */
+
+#hamburger-menu {
+    display: none;
+}
+
+#header-hamburger-menu-button {
+    display: none;
+    z-index: 3;
+}
+
+label[for=header-hamburger-menu-button] img {
+    width: 2.5vw;
+    margin-left: 1.5vw;
+    display: none;
+}
+
+#header-hamburger-menu-button:checked ~ #hamburger-menu {
+    display: flex;
+    z-index: 2;
+    background-color: var(--white);
+    height: 100vh;
+    width: 22rem;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--grey);
+    color: var(--white);
+    font-family: "Spartan-Medium";
+    height: 3.2vw;
+    font-size: 1vw;
+}
+
+.footer-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+.footer-copyright {
+    margin: 3vw;
+    height: 0.85vw;
+    font-size: 0.8vw;
+    padding-top: 0.08vw;
+}
+
+.footer-email {
+    display: flex;
+    margin: auto;
+    gap: 0.2vw;
+    height: 1.2vw;
+}
+.footer-email-icon img {
+    max-width: 1.8vw;
+}
+.footer-email-address a {
+    text-decoration: none;
+    color: var(--white);
+}
+.footer-email-address {
+    list-style-type: none;
+    font-family: "Spartan-Medium";
+}
+
+.footer-social-medias {
+    display: flex;
+    margin: 3vw;
+    margin-left: auto;
+    gap: 1vw;
+    align-items: center;
+    height: 1.7vw;
+}
+.footer-social-medias img {
+    max-width: 1.8vw;
+    padding-top: 0.3vw;
+}
+
+@media only screen and (max-width: 758px) {
+    .header-space {
+        padding-bottom: 1.4rem;
+    }
+    header {
+        height: 1.9rem;
+        font-size: 0.58rem;
+    }
+    .header-museum-logo img {
+        width: 7.3rem;
+    }
+    .header-explore-button, .header-exhibitionspaces-button, .header-specialevents-button, .header-getinvolved-button, .header-visit-button {
+        min-height: 1.9rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header-museum-categories {
+        display: none;
+    }
+    .header-museum-logo a {
+        position: fixed;
+        right: 37.5vw;
+        top: 0.1rem;
+    }
+    /* hamburger menu */
+    label[for=header-hamburger-menu-button] img {
+        width: 1.2rem;
+        margin-left: 0.7rem;
+        top: 0.45rem;
+        display: block;
+        position: fixed;
+        z-index: 3;
+    }
+    .hamburger-menu-museum-logo {
+        left: 7.5rem;
+        top: 0.2rem;
+        position: fixed;
+    }
+    .hamburger-menu-museum-logo img {
+        width: 7.3rem;
+    }
+    /*#hamburger-menu {
+        display: flex;
+        flex-direction: column;
+    }*/
+    /* email */
+    .hamburger-menu-email {
+        font-family: "Spartan-Medium";
+        position: fixed;
+        top: 87vh;
+        left: 8.9rem;
+    }
+    .hamburger-menu-email-icon img {
+        width: 28px;
+        position: fixed;
+        top: 86.2vh;
+        left: 6.9rem;
+    }
+    .hamburger-menu-email-address a {
+        text-decoration: none;
+        color: black;
+    }
+    .hamburger-menu-email-address {
+        list-style-type: none;
+    }
+    /* copyright */
+    .hamburger-menu-copyright {
+        font-family: "Spartan-Medium";
+        height: 0.85vw;
+        font-size: 1em;
+        position: fixed;
+        top: 96vh;
+        left: 4.6rem;
+    }
+    /* social media */
+    .hamburger-menu-social-medias {
+        display: flex;
+        margin-left: auto;
+        gap: 0.6rem;
+        align-items: center;
+        top: 74vh;
+        left: 6rem;
+        position: fixed;
+    }
+    .hamburger-menu-social-medias img {
+        height: 28px;
+    }
+    /* menu buttons */
+    .hamburger-menu-museum-categories {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        top: 12vh;
+        position: fixed;
+        left: 5.5rem;
+    }
+    .hamburger-menu-museum-categories a {
+        width: 11.26rem;
+    }
+    .hamburger-menu-explore-button, .hamburger-menu-exhibitionspaces-button, .hamburger-menu-specialevents-button, .hamburger-menu-getinvolved-button, .hamburger-menu-visit-button {
+        color: var(--white);
+        padding: 0.75rem;
+        text-align: center;
+        font-size: 1.5em;
+        transition: background-color 0.2s ease-in;
+    }
+
+    .hamburger-menu-explore-button {
+        background-color: var(--orange);
+    }
+    .hamburger-menu-explore-button:hover {
+        background-color: var(--darker-orange);
+    }
+    .hamburger-menu-explore-button:focus {
+        background-color: var(--darker-orange);
+    }
+    .hamburger-menu-exhibitionspaces-button {
+        background-color: var(--blue);
+        width: 12vw;
+    }
+    .hamburger-menu-exhibitionspaces-button:hover {
+        background-color: var(--darker-blue);
+    }
+    .hamburger-menu-exhibitionspaces-button:focus {
+        background-color: var(--darker-blue);
+    }
+    .hamburger-menu-specialevents-button {
+        background-color: var(--dark-green);
+        width: 15vw;
+    }
+    .hamburger-menu-specialevents-button:hover {
+        background-color: var(--darker-dark-green);
+    }
+    .hamburger-menu-specialevents-button:focus {
+        background-color: var(--darker-dark-green);
+    }
+    .hamburger-menu-getinvolved-button {
+        background-color: var(--red);
+    }
+    .hamburger-menu-getinvolved-button:hover {
+        background-color: var(--darker-red);
+    }
+    .hamburger-menu-getinvolved-button:focus {
+        background-color: var(--darker-red);
+    }
+    .hamburger-menu-visit-button {
+        background-color: var(--light-green);
+    }
+    .hamburger-menu-visit-button:hover {
+        background-color: var(--darker-light-green);
+    }
+    .hamburger-menu-visit-button:focus {
+        background-color: var(--darker-light-green);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    /* hamburger menu*/
+    label[for=header-hamburger-menu-button] img {
+        width: 1.5rem;
+        margin-top: 0.4rem;
+        margin-left: 0.8rem;
+    }
+    #header-hamburger-menu-button:checked ~ #hamburger-menu {
+        width: 100%;
+    }
+    .hamburger-menu-museum-logo {
+        left: 22vw;
+    }
+    .hamburger-menu-museum-logo img {
+        width: 13rem;
+    }
+    /* hamburger menu copyright */
+    .hamburger-menu-copyright {
+        font-size: 0.7em;
+        top: 96vh;
+        left: 14vw;
+    }
+    /* hamburger menu email */
+    .hamburger-menu-email {
+        top: 86vh;
+        left: 30vw;
+    }
+    .hamburger-menu-email-icon img {
+        width: 7.5vw;
+        top: 86vh;
+        left: 21vw;
+    }
+    /* social media */
+    .hamburger-menu-social-medias {
+        gap: 5vw;
+        top: 73vh;
+        left: 21vw;
+    }
+    .hamburger-menu-social-medias img {
+        height: 8.5vw;
+    }
+    /* hamburger menu buttons */
+    .hamburger-menu-museum-categories {
+        gap: 3vw;
+        left: 21vw;
+        top: 14vh;
+    }
+    .hamburger-menu-museum-categories a {
+        width: 55vw;
+    }
+    .hamburger-menu-explore-button, .hamburger-menu-exhibitionspaces-button, .hamburger-menu-specialevents-button, .hamburger-menu-getinvolved-button, .hamburger-menu-visit-button {
+        font-size: 5vw;
+        height: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* header */
+
+    .page-title {
+        padding-bottom: 6vw;
+    }
+    .header-space {
+        padding-bottom: 2.5rem;
+    }
+    header {
+        height: 3rem;
+        font-size: 4.5vw;
+    }
+    .header-museum-logo a {
+        right: 57vw;
+    }
+    .header-museum-logo img {
+        width: 13rem;
+    }
+
+    /* footer */
+
+    footer {
+        display: none;
+    }
+
+    h1 {
+        font-size: 10vw;
+    }
+    .undertitle { 
+        font-size: 7vw;
+    }
+    h2 {
+        font-size: 6vw;
+    }
+    p {
+        font-size: 5vw;
+        margin-bottom: 5vw;
+    }
+    
+    .p-bottom {
+        font-family: "Spartan-Medium", Tahoma, Verdana;
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    label[for=header-hamburger-menu-button] img {
+        margin-right: 3rem;
+    }
+}
