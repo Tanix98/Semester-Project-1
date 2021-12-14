@@ -496,7 +496,7 @@ footer {
     }
     .hamburger-menu-explore-button, .hamburger-menu-exhibitionspaces-button, .hamburger-menu-specialevents-button, .hamburger-menu-getinvolved-button, .hamburger-menu-visit-button {
         font-size: 5vw;
-        height: 20vw;
+        height: 16vw;
         display: flex;
         align-items: center;
         justify-content: center;
