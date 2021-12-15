@@ -349,18 +349,19 @@ footer {
         font-family: "Spartan-Medium";
         font-display: swap;
         position: fixed;
-        top: 87vh;
-        left: 8.9rem;
+        top: 86vh;
+        left: 7.6rem;
     }
     .hamburger-menu-email-icon img {
-        width: 28px;
+        width: 20px;
         position: fixed;
-        top: 86.2vh;
-        left: 6.9rem;
+        top: 86vh;
+        left: 6rem;
     }
     .hamburger-menu-email-address a {
         text-decoration: none;
         color: black;
+        font-size: 1.4em;
     }
     .hamburger-menu-email-address {
         list-style-type: none;
@@ -370,10 +371,10 @@ footer {
         font-family: "Spartan-Medium";
         font-display: swap;
         height: 0.85vw;
-        font-size: 1em;
+        font-size: 0.8em;
         position: fixed;
         top: 96vh;
-        left: 4.6rem;
+        left: 5.97rem;
     }
     /* social media */
     .hamburger-menu-social-medias {
@@ -485,12 +486,15 @@ footer {
     /* hamburger menu email */
     .hamburger-menu-email {
         top: 86vh;
-        left: 30vw;
+        left: 29.5vw;
     }
     .hamburger-menu-email-icon img {
         width: 7.5vw;
         top: 86vh;
-        left: 21vw;
+        left: 20.5vw;
+    }
+    .hamburger-menu-email-address a {
+        font-size: 1em;
     }
     /* social media */
     .hamburger-menu-social-medias {
