@@ -1,18 +1,6 @@
-:root {
-    --white: #FFF;
-    --black: #0000;
-    --grey: #4a4a4a; 
-    --orange: #e67a23;
-    --blue: #158c87; 
-    --dark-green: #12960b; 
-    --red: #e42328; 
-    --light-green: #42c329; 
-}
-
 body {
     background-image: url(../resources/images/william-bout-264826.jpg);
     background-size: cover;
-    background-color: var(--white);
     background-position-y: 35%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -36,7 +24,7 @@ body {
 
 .news-1, .news-2, .news-3 {
     width: 70vw;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
     margin: auto;
 }
 
@@ -51,7 +39,6 @@ body {
     padding-right: 2vw;
     padding-bottom: 2vw;
 }
-
 .news-3-texts {
     padding-left: 2vw;
     padding-right: 2vw;

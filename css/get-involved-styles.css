@@ -1,18 +1,6 @@
-:root {
-    --white: #FFF;
-    --black: #0000;
-    --grey: #4a4a4a; 
-    --orange: #e67a23;
-    --blue: #158c87; 
-    --dark-green: #12960b; 
-    --red: #e42328; 
-    --light-green: #42c329; 
-}
-
 body {
     background-image: url(../resources/images/adobestock_247185860.jpg);
     background-size: cover;
-    background-color: var(--white);
     background-position-y: 30%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -32,7 +20,7 @@ body {
 }
 
 .support, .volunteer, .internships {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
     padding: 2vw;
 }
 

@@ -1,18 +1,6 @@
-:root {
-    --white: #FFF;
-    --black: #0000;
-    --grey: #4a4a4a; 
-    --orange: #e67a23;
-    --blue: #158c87; 
-    --dark-green: #12960b; 
-    --red: #e42328; 
-    --light-green: #42c329; 
-}
-
 body {
     background-image: url(../resources/images/billetto-editorial-334686.jpg);
     background-size: cover;
-    background-color: var(--white);
     background-position-y: 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -32,9 +20,9 @@ body {
     gap: 3vw;
 }
 
-.for-kids {
+.for-kids, .for-teachers, .researchers {
     width: 46vw;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
     padding: 2vw;
 }
 .kids-title, .teachers-title, .researchers-title {
@@ -42,23 +30,8 @@ body {
     padding-bottom: 1.5vw;
 }
 
-.for-teachers {
-    width: 46vw;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 2vw;
-}
-
-.researchers {
-    width: 46vw;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 2vw;
-}
-
 @media only screen and (max-width: 520px) {
-    #page-text {
-        height: 49vw;
-    }
-    .researchers {
+    #page-text, .researchers {
         height: 49vw;
     }
 }
@@ -73,32 +46,17 @@ body {
         align-items: center;
         flex-direction: column;
     }
-    
-    .for-kids {
-        width: 92vw;
-        padding: 5vw;
-        margin-bottom: 4vw;
-    }
-    .kids-title {
+
+    .kids-title, .teachers-title, .researchers-title {
         padding-bottom: 3vw;
     }
-    
-    .for-teachers {
+
+    .for-kids, .for-teachers, .researchers {
         width: 92vw;
         padding: 5vw;
-        margin-bottom: 4vw;
-    }
-    .teachers-title {
-        padding-bottom: 3vw;
-    }
-    
-    .researchers {
-        width: 92vw;
-        padding: 5vw;
-        height: 85vw;
         margin-bottom: 5vw;
     }
-    .researchers-title {
-        padding-bottom: 3vw;
+    .researchers {
+        height: 86vw;
     }
 }
