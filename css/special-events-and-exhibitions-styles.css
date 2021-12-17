@@ -46,10 +46,13 @@ body {
 }
 
 .image-3-attribution {
+    margin-bottom: 1vw;
+}
+.image-3-attribution a {
+    color: var(--black);
     font-family: "Spartan-Medium", Tahoma, Verdana;
     font-display: swap;
     font-size: 1vw;
-    margin-bottom: 1vw;
 }
 
 @media only screen and (max-width: 700px) {
@@ -82,9 +85,8 @@ body {
     p {
         font-size: 1.8vw;
     }
-    .image-3-attribution {
+    .image-3-attribution a {
         font-size: 1.2vw;
-        margin-bottom: 1vw;
     }
 }
 
@@ -138,7 +140,7 @@ body {
     p {
         font-size: 5vw;
     }
-    .image-3-attribution {
+    .image-3-attribution a {
         font-size: 3vw;
     }
 }
