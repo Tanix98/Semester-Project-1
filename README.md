@@ -17,7 +17,7 @@ An informative website made for an interactive science museum, with the intentio
 
 ### Netlify host
 
-[Click here to view the website](https://silly-haibt-b7ef5b.netlify.app/index.html)
+[Click here to view the website](https://community-science-museum-semester-project.netlify.app)
 
 ### Host locally
 
