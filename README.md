@@ -4,13 +4,11 @@
 
 This website was the Semester Project I created as a student at Noroff Front-end Development. We did not learn about JavaScript until after, so this website only uses HTML and CSS.
 
-School project. A museum website. Completely responsive and functional, but still only made using HTML & CSS, as I hadn’t yet begun learning JavaScript.
-
 ---
 
 ## Description
 
-Semester project. An informative website made for an interactive science museum, with the intention of appealing to a target audience of young children in primary and middle school, and their families. The website is responsive and easy to use on both PCs and smartphones.
+An informative website made for an interactive science museum, with the intention of appealing to a target audience of young children in primary and middle school, and their families. The website is responsive and easy to use on both PCs and smartphones.
 
 ---
 
