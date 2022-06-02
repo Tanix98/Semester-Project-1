@@ -1,6 +1,6 @@
 # Semester Project: Community Science Museum website
 
-![Community Science Museum Logo](https://i.imgur.com/DRDV5L4.png)
+![Community Science Museum Logo](https://i.imgur.com/lsNIzpn.jpg)
 
 This website was the Semester Project I created as a Front-end Development student at Noroff. I hadn't yet learned about JavaScript, so this website only uses HTML and CSS.
 
