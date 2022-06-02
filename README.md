@@ -28,11 +28,7 @@ An informative website made for an interactive science museum, with the intentio
 
 ## Contact
 
-**Insert link to my portfolio website socials page here**
-
-oysteinrostvik@protonmail.com
-
-[My LinkedIn account](https://www.linkedin.com/in/øystein-røstvik/?locale=en_US "My LinkedIn account")
+[Click to view my contact info]()
 
 ## Acknowledgments
 
