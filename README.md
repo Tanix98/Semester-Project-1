@@ -2,7 +2,7 @@
 
 ![Community Science Museum Logo](https://i.imgur.com/DRDV5L4.png)
 
-This website was the Semester Project I created as a Front-end Development student at Noroff. We did not learn about JavaScript until after, so this website only uses HTML and CSS.
+This website was the Semester Project I created as a Front-end Development student at Noroff. I hadn't yet learned about JavaScript, so this website only uses HTML and CSS.
 
 ---
 
