@@ -36,6 +36,8 @@ An informative website made for an interactive science museum, with the intentio
 
 [Ubuntu typeface](https://www.1001fonts.com/ubuntu-font.html)
 
+---
+
 ### Adobe stock images 
 
 https://stock.adobe.com/no/images/moscow-russia-september-28-exhibition-in-moscow-planetarium-on-september-28-2014-in-moscow-one-of-the-world-s-largest-and-oldest-planetarium/302984803?prev_url=detail
