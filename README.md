@@ -4,20 +4,14 @@
 
 This website was the Semester Project I created as a Front-end Development student at Noroff. I hadn't yet learned about JavaScript, so this website only uses HTML and CSS.
 
----
-
 ## Description
 
 An informative website made for an interactive science museum, with the intention of appealing to a target audience of young children in primary and middle school, and their families. The website is responsive and easy to use on both PCs and smartphones.
-
----
 
 ## Built with
 
 * HTML
 * CSS
-
----
 
 ## Getting started
 
@@ -32,8 +26,6 @@ An informative website made for an interactive science museum, with the intentio
 1. Install a plugin called Live Server to Visual Studio Code.
 1. In the bottom right corner, click on Go live to run a local host of the website. 
 
----
-
 ## Contact
 
 **Insert link to my portfolio website socials page here**
@@ -42,15 +34,11 @@ oysteinrostvik@protonmail.com
 
 [My LinkedIn account](https://www.linkedin.com/in/øystein-røstvik/?locale=en_US "My LinkedIn account")
 
----
-
 ## Acknowledgments
 
 [Spartan typeface](https://fonts.google.com/specimen/Spartan)
 
 [Ubuntu typeface](https://www.1001fonts.com/ubuntu-font.html)
-
-
 
 ### Adobe stock images 
 
