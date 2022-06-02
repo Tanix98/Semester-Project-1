@@ -1,4 +1,4 @@
-# Semester Project 1: Community Science Museum website
+# Semester Project: Community Science Museum website
 
 ![Community Science Museum Logo](https://i.imgur.com/DRDV5L4.png)
 
