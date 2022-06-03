@@ -1,12 +1,12 @@
-# Cross-course project: GameHub
+# Semester Project: Community Science Museum website
 
-![Game Hub logo](https://i.imgur.com/BGWWst2.png)
+![Community Science Museum Logo](https://i.imgur.com/lsNIzpn.jpg)
 
-An online video game marketplace. My first attempt at building a proper website using HTML & CSS, which is why it lacks responsiveness and functionality.
+This website was the Semester Project I created as a Front-end Development student at Noroff. I hadn't yet learned about JavaScript, so this website only uses HTML and CSS.
 
 ## Description
 
-GameHub is a marketplace to buy and sell video games, with a target audience of gamers aged 18 to 25. This website was created for the cross-course project between the Design and HTML & CSS courses. It was also my very first attempt at coding a proper website, which is why the website isn't very responsive. 
+An informative website made for an interactive science museum, with the intention of appealing to a target audience of young children in primary and middle school, and their families. The website is responsive and easy to use on both PCs and smartphones.
 
 ## Built with
 
@@ -17,65 +17,37 @@ GameHub is a marketplace to buy and sell video games, with a target audience of 
 
 ### Netlify host
 
-[Click here to view the website](https://game-hub-project.netlify.app)
+[Click here to view the website](https://community-science-museum-semester-project.netlify.app)
 
 ### Host locally
 
 1. Download the zip file and extract the website folder. 
 1. Open the HTML/CSS files in Visual Studio Code.
 1. Install a plugin called Live Server to Visual Studio Code.
-1. In the bottom right corner, click on Go live to run a local host of the website.
+1. In the bottom right corner, click on Go live to run a local host of the website. 
 
 ## Contact
 
-[Click to view my contact info](https://oystein-rostvik-portfolio.netlify.app/pages/socials.html)
+[Click to view my contact info](https://portfolio-oystein-rostvik.netlify.app/pages/socials.html)
 
 ## Acknowledgments
 
-[Roboto typeface](https://fonts.google.com/specimen/Roboto)
+[Spartan typeface](https://fonts.google.com/specimen/Spartan)
 
-[Tourney typeface](https://fonts.google.com/specimen/Tourney)
-
-[Hyperlink images](https://www.youtube.com/watch?v=OZ-2vlCjAFE)
-
-[Left navigation bar](https://www.youtube.com/watch?v=2K9aNCS8iAI)
-
-[Border bottom instead of text underline](https://stackoverflow.com/questions/43085144/how-to-change-width-of-underline-in-css)
-
-[Search bar](https://www.w3schools.com/howto/howto_css_searchbar.asp)
-
-[Dropdown menu](https://www.w3schools.com/howto/howto_css_dropdown.asp) 
-
-[Hidden input type number arrows](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp)
-
-[W3 validator](https://validator.w3.org)
-
-[Star icon](https://fonts.google.com/icons?selected=Material%20Icons%3Agrade%3A)
+[Ubuntu typeface](https://www.1001fonts.com/ubuntu-font.html)
 
 ---
 
-### Promotional game banners from Epic Games Store: 
-https://www.epicgames.com/store/en-US/p/nba-2k21
-https://www.epicgames.com/store/en-US/p/control
-https://www.epicgames.com/store/en-US/p/death-stranding
-https://www.epicgames.com/store/en-US/p/grand-theft-auto-v
-https://www.epicgames.com/store/en-US/p/godfall
-https://www.epicgames.com/store/en-US/p/sonic-colors-ultimate
-https://www.epicgames.com/store/en-US/p/world-war-z
-https://www.epicgames.com/store/en-US/p/ghostrunner
-https://www.epicgames.com/store/en-US/p/horizon-zero-dawn-complete-edition
+### Adobe stock images 
 
----
+https://stock.adobe.com/no/images/moscow-russia-september-28-exhibition-in-moscow-planetarium-on-september-28-2014-in-moscow-one-of-the-world-s-largest-and-oldest-planetarium/302984803?prev_url=detail
 
-### Game promontional material used in Resale Market:
-https://no.coolshop.com/produkt/fable-iii-3/AX4JV8/
-https://www.mobygames.com/game/igi-2-covert-strike/cover-art/gameCoverId,37175/
-https://howlongtobeat.com/game?id=51225&s=reviews&sb=score
-https://bulbapedia.bulbagarden.net/wiki/Pokémon_FireRed_and_LeafGreen_Versions
-https://www.bestbuy.com/site/fallout-3-game-of-the-year-edition-xbox-360/9554207.p?skuId=9554207&intl=nosplash
-https://www.amazon.co.uk/Grand-Theft-Auto-San-Andreas/dp/B0001701BU
-https://unsplash.com/photos/ua-ETCQY7rw
-https://www.argos.co.uk/product/7476046
-https://en.wikipedia.org/wiki/Lego_Creator:_Knights%27_Kingdom
-https://www.amazon.com/New-Super-Mario-Bros-nintendo-wii/dp/B002I0K3CK
-https://www.mobygames.com/game/xbox/halo-combat-evolved/cover-art/gameCoverId,208729/
+https://stock.adobe.com/no/images/san-francisco-usa-oct-5-2015-exhibits-on-climate-change-in-the-california-academy-of-sciences-a-natural-history-museum-in-san-francisco-california-it-was-established-in-1853/364868439?prev_url=detail
+
+https://stock.adobe.com/no/images/robot-on-the-exhibition/117021506
+
+https://stock.adobe.com/fi/images/portrait-of-two-cheerful-museum-workers-discussing-paintings-walking-in-art-gallery-copy-space/247185860
+
+https://www.freepik.com/free-photo/solar-panels-wind-turbines-green-energy-concept_20244713.htm?query=windmill%20model
+
+https://www.pexels.com/photo/multiethnic-students-listening-lecturer-in-university-5940842/
